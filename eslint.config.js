@@ -190,7 +190,7 @@ export default [
         },
     },
     {
-        files: ["**/tool/**/component.astro"],
+        files: ["**/tool/**/component.astro", "**/tool/typing-test/**"],
         rules: {
             "max-lines": "off",
             "max-lines-per-function": "off",
