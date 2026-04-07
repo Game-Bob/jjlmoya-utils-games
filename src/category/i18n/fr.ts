@@ -1,6 +1,6 @@
 import type { CategoryLocaleContent } from '../../types';
 
-const slug = 'defis-jeux';
+const slug = 'jeux';
 const title = 'Défis Viraux & Jeux | Test de Dactylographie & Défis de Vitesse';
 const description = 'Défis gamifiés et jeux viraux pour tester vos compétences. Tests de dactylographie, défis de vitesse et jeux addictifs 100% hors ligne.';
 
