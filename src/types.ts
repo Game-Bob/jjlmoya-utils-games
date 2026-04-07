@@ -28,6 +28,7 @@ export interface ToolLocaleContent<TUI extends Record<string, string> = Record<s
   title: string;
   description: string;
   ui: TUI;
+  wordPool?: string[];
   seo: SEOSection[];
   faqTitle?: string;
   faq: FAQItem[];

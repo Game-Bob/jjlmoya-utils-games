@@ -1,15 +1,12 @@
 ---
 import { SEORenderer } from '@jjlmoya/utils-shared';
-import { gamesCategory } from './index';
-import type { KnownLocale } from '../types';
+import type { SEOSection } from '../types';
 
 interface Props {
-  locale?: KnownLocale;
+  seoSections: SEOSection[];
 }
 
-const { locale = 'es' } = Astro.props;
-const content = await gamesCategory.i18n[locale]?.();
+const { seoSections } = Astro.props;
 ---
 
-{content && <SEORenderer content={{ locale, sections: content.seo }} />}
-
+<SEORenderer sections={seoSections} />

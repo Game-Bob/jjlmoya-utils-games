@@ -52,7 +52,7 @@ export async function getStaticPaths() {
   return paths;
 }
 
-type ToolComponent = (props: { ui: Record<string, string> }) => unknown;
+type ToolComponent = (props: { ui: Record<string, string>; wordPool?: string[] }) => unknown;
 
 interface NavItem {
   id: string;
@@ -109,7 +109,7 @@ const titleBase = words.slice(1).join(" ") || "";
     />
 
     <section class="section-tool">
-      <Component ui={content.ui} />
+      <Component ui={content.ui} wordPool={content.wordPool} />
     </section>
 
     <section class="section-seo">

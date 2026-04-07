@@ -1,0 +1,8 @@
+---
+import { SEORenderer } from '@jjlmoya/utils-shared';
+import { gamesCategory } from './index';
+
+const categoryContent = await gamesCategory.i18n.es?.();
+---
+
+{categoryContent && <SEORenderer sections={categoryContent.seo} />}
