@@ -1,8 +1,19 @@
 ---
-import { SEORenderer } from '@jjlmoya/utils-shared';
-import { gamesCategory } from './index';
+import { SEORenderer } from "@jjlmoya/utils-shared";
+import { gamesCategory } from "./index";
 
-const categoryContent = await gamesCategory.i18n.es?.();
+import type { KnownLocale } from "../types";
+
+interface Props {
+  locale?: string;
+}
+
+const { locale = "es" } = Astro.props;
+const categoryContent = await gamesCategory.i18n[locale as KnownLocale]?.();
 ---
 
-{categoryContent && <SEORenderer sections={categoryContent.seo} />}
+{
+  categoryContent && (
+    <SEORenderer content={{ locale, sections: categoryContent.seo }} />
+  )
+}
