@@ -1,7 +1,7 @@
 import type { GamesToolLocaleContent as GamesToolLocaleContentType } from '../../../index';
 
 const slug = 'typing-speed-test';
-const title = 'Gamified Typing Speed Test | Measure Your Writing Velocity';
+const title = 'Typing Speed Test: Measure Your Writing Velocity';
 const description = 'Fully offline typing test with addictive gamification. Measure your WPM, accuracy and achievements. Compete with yourself and improve your typing speed.';
 
 const faqItems = [

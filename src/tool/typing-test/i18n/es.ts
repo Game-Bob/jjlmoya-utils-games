@@ -1,7 +1,7 @@
 import type { GamesToolLocaleContent as GamesToolLocaleContentType } from '../../../index';
 
 const slug = 'test-mecanografia';
-const title = 'Test de Mecanografía Gamificado | Mide tu Velocidad de Escritura';
+const title = 'Test de Mecanografía: Mide tu Velocidad de Escritura';
 const description = 'Test de mecanografía 100% offline con gamificación adictiva. Mide tu WPM, precisión y logros. Compite contigo mismo y mejora tu velocidad de escritura.';
 
 const faqItems = [

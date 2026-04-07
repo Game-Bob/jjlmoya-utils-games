@@ -1,7 +1,7 @@
 import type { GamesToolLocaleContent as GamesToolLocaleContentType } from '../../../index';
 
 const slug = 'test-vitesse-dactylographie';
-const title = 'Test de Vitesse de Dactylographie Gamifié | Mesurez votre Vélocité d\'Écriture';
+const title = 'Test de Vitesse de Dactylographie: Mesurez votre Vélocité d\'Écriture';
 const description = 'Test de dactylographie 100% hors ligne avec gamification addictive. Mesurez votre WPM, précision et réalisations. Concourez avec vous-même et améliorez votre vitesse de dactylographie.';
 
 const faqItems = [
