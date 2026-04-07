@@ -4,6 +4,54 @@ const slug = 'test-vitesse-dactylographie';
 const title = 'Test de Vitesse de Dactylographie Gamifié | Mesurez votre Vélocité d\'Écriture';
 const description = 'Test de dactylographie 100% hors ligne avec gamification addictive. Mesurez votre WPM, précision et réalisations. Concourez avec vous-même et améliorez votre vitesse de dactylographie.';
 
+const faqItems = [
+  { question: 'Quelle est la vitesse de frappe moyenne?', answer: 'La vitesse moyenne des adultes est 40-60 MPM (mots par minute). Les dactylographes compétents atteindent 70-100 MPM. Les plus rapides du monde dépassent 200 MPM. Ce test vous montre où vous en êtes.' },
+  { question: 'Comment le MPM est-il calculé?', answer: 'Prenez les caractères corrects, divisez par 5 (longueur moyenne des mots), divisez par les minutes écoulées. Ceci pénalise automatiquement les erreurs, vous donnant une vitesse nette juste.' },
+  { question: 'Mes résultats sont-ils sauvegardés?', answer: 'Oui, localement dans votre navigateur. Votre meilleur MPM est sauvegardé automatiquement. Personne en ligne ne voit vos résultats à moins que vous les partagiez.' },
+  { question: 'Est-ce précis sans connexion Internet?', answer: 'Complètement. Ce test s\'exécute à 100% dans votre navigateur sans envoyer de données aux serveurs. Cela signifie une précision au milliseconde, zéro latence réseau.' },
+  { question: 'Combien de temps pour améliorer ma vitesse?', answer: 'Des améliorations notables en 2-3 semaines avec une pratique régulière. Des changements dramatiques (par exemple, 50 à 100 MPM) prennent 3-6 mois de pratique sérieuse.' },
+  { question: 'Puis-je pratiquer sans Internet?', answer: 'Bien sûr. Ce test fonctionne 100% hors ligne. Chargez une fois, puis jouez sans Internet. Parfait pour les voyages ou les pannes WiFi.' },
+];
+
+const howToItems = [
+  { name: 'Commencez à taper', text: 'Commencez simplement à taper. Le minuteur démarre automatiquement à la première frappe. Vous avez 60 secondes.' },
+  { name: 'Tapez les mots correctement', text: 'Les mots corrects sont surlignés en cyan. Les lettres mal écrites deviennent rouges. Complétez chaque mot sans erreurs pour le compter.' },
+  { name: 'Regardez votre progression en direct', text: 'Votre MPM, votre précision et votre nombre de mots se mettent à jour en temps réel pendant que vous tapez.' },
+  { name: 'Obtenez vos résultats finaux', text: 'Quand le temps s\'écoule, voyez votre MPM final, votre précision totale et l\'option de partager les résultats.' },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org' as const,
+  '@type': 'FAQPage' as const,
+  mainEntity: faqItems.map((item) => ({
+    '@type': 'Question' as const,
+    name: item.question,
+    acceptedAnswer: { '@type': 'Answer' as const, text: item.answer },
+  })),
+};
+
+const howToSchema = {
+  '@context': 'https://schema.org' as const,
+  '@type': 'HowTo' as const,
+  name: title,
+  description,
+  step: howToItems.map((step) => ({
+    '@type': 'HowToStep' as const,
+    name: step.name,
+    text: step.text,
+  })),
+};
+
+const appSchema = {
+  '@context': 'https://schema.org' as const,
+  '@type': 'SoftwareApplication' as const,
+  name: title,
+  description,
+  applicationCategory: 'UtilitiesApplication' as const,
+  operatingSystem: 'Web' as const,
+  offers: { '@type': 'Offer' as const, price: '0', priceCurrency: 'EUR' },
+};
+
 export const content: GamesToolLocaleContentType = {
   slug,
   title,
@@ -353,9 +401,9 @@ export const content: GamesToolLocaleContentType = {
   ],
   bibliography: [
     {
-      name: 'Wikipedia - WPM',
+      name: 'Wikipedia - Mots par minute',
       url: 'https://en.wikipedia.org/wiki/Words_per_minute',
-    }
+    },
   ],
-  schemas: [],
+  schemas: [faqSchema, howToSchema, appSchema],
 };

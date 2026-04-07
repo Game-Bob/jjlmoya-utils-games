@@ -4,6 +4,54 @@ const slug = 'test-mecanografia';
 const title = 'Test de Mecanografía Gamificado | Mide tu Velocidad de Escritura';
 const description = 'Test de mecanografía 100% offline con gamificación adictiva. Mide tu WPM, precisión y logros. Compite contigo mismo y mejora tu velocidad de escritura.';
 
+const faqItems = [
+  { question: '¿Cuál es la velocidad promedio de escritura?', answer: 'La velocidad promedio de un adulto es 40-60 WPM (palabras por minuto). Mecanógrafos competentes alcanzan 70-100 WPM. Los más rápidos del mundo superan 200 WPM. Este test te dirá dónde estás.' },
+  { question: '¿Cómo se calcula el WPM?', answer: 'Se toma el número de caracteres correctos, se divide entre 5 (longitud promedio de palabra) y se divide por los minutos transcurridos. Esto penaliza errores automáticamente, dándote una medida justa de velocidad neta.' },
+  { question: '¿Se guardan mis resultados?', answer: 'Sí, localmente en tu navegador. Tu mejor WPM se guarda automáticamente. Nadie en internet ve tus resultados a menos que tú los compartas.' },
+  { question: '¿Es preciso sin conexión a internet?', answer: 'Totalmente. Este test corre 100% en tu navegador sin enviar datos a servidores. Eso significa precisión al milisegundo, sin latencia de red.' },
+  { question: '¿Cuánto tiempo toma mejorar mi velocidad?', answer: 'Mejoras notables en 2-3 semanas con práctica consistente. Cambios dramáticos (digamos, de 50 a 100 WPM) toman 3-6 meses de práctica seria.' },
+  { question: '¿Puedo practicar sin conexión?', answer: 'Claro. Este test funciona 100% offline. Carga una vez, luego puedes jugar sin internet. Perfecto para viajar o cuando tu WiFi falla.' },
+];
+
+const howToItems = [
+  { name: 'Comienza a escribir', text: 'Simplemente empieza a teclear. El contador inicia automáticamente cuando escribes el primer carácter. Tienes 60 segundos.' },
+  { name: 'Escribe palabras correctamente', text: 'Las palabras correctas se marcan en cyan. Las letras mal escritas en rojo. Completa la palabra sin errores para sumarla.' },
+  { name: 'Mira tu progreso en vivo', text: 'Ve tu WPM, precisión y número de palabras actualizarse en tiempo real mientras escribes.' },
+  { name: 'Obtén tu resultado final', text: 'Cuando termina el tiempo, ves tu WPM final, precisión total y puedes compartir tu resultado.' },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org' as const,
+  '@type': 'FAQPage' as const,
+  mainEntity: faqItems.map((item) => ({
+    '@type': 'Question' as const,
+    name: item.question,
+    acceptedAnswer: { '@type': 'Answer' as const, text: item.answer },
+  })),
+};
+
+const howToSchema = {
+  '@context': 'https://schema.org' as const,
+  '@type': 'HowTo' as const,
+  name: title,
+  description,
+  step: howToItems.map((step) => ({
+    '@type': 'HowToStep' as const,
+    name: step.name,
+    text: step.text,
+  })),
+};
+
+const appSchema = {
+  '@context': 'https://schema.org' as const,
+  '@type': 'SoftwareApplication' as const,
+  name: title,
+  description,
+  applicationCategory: 'UtilitiesApplication' as const,
+  operatingSystem: 'Web' as const,
+  offers: { '@type': 'Offer' as const, price: '0', priceCurrency: 'EUR' },
+};
+
 export const content: GamesToolLocaleContentType = {
   slug,
   title,
@@ -105,25 +153,10 @@ export const content: GamesToolLocaleContentType = {
     { type: 'list', items: ['De 40 WPM a 70 WPM: 4-6 semanas (práctica diaria)', 'De 70 WPM a 100 WPM: 8-12 semanas', 'De 100 WPM a 150+ WPM: 4-6 meses (requiere entrenamiento muy enfocado)'] },
     { type: 'paragraph', html: '<em>El factor clave es CONSISTENCIA, no intensidad. 10 minutos diarios supera 2 horas cada 2 semanas. El cerebro aprende a través de la repetición espaciada, no la maratón.</em>' },
   ],
-  faq: [
-    { question: '¿Cuál es la velocidad promedio de escritura?', answer: 'La velocidad promedio de un adulto es 40-60 WPM (palabras por minuto). Mecanógrafos competentes alcanzan 70-100 WPM. Los más rápidos del mundo superan 200 WPM. Este test te dirá dónde estás.' },
-    { question: '¿Cómo se calcula el WPM?', answer: 'Se toma el número de caracteres correctos, se divide entre 5 (longitud promedio de palabra) y se divide por los minutos transcurridos. Esto penaliza errores automáticamente, dándote una medida justa de velocidad neta.' },
-    { question: '¿Se guardan mis resultados?', answer: 'Sí, localmente en tu navegador. Tu mejor WPM se guarda automáticamente. Nadie en internet ve tus resultados a menos que tú los compartas.' },
-    { question: '¿Es preciso sin conexión a internet?', answer: 'Totalmente. Este test corre 100% en tu navegador sin enviar datos a servidores. Eso significa precisión al milisegundo, sin latencia de red.' },
-    { question: '¿Cuánto tiempo toma mejorar mi velocidad?', answer: 'Mejoras notables en 2-3 semanas con práctica consistente. Cambios dramáticos (digamos, de 50 a 100 WPM) toman 3-6 meses de práctica seria.' },
-    { question: '¿Puedo practicar sin conexión?', answer: 'Claro. Este test funciona 100% offline. Carga una vez, luego puedes jugar sin internet. Perfecto para viajar o cuando tu WiFi falla.' },
-  ],
-  howTo: [
-    { name: 'Comienza a escribir', text: 'Simplemente empieza a teclear. El contador inicia automáticamente cuando escribes el primer carácter. Tienes 60 segundos.' },
-    { name: 'Escribe palabras correctamente', text: 'Las palabras correctas se marcan en cyan. Las letras mal escritas en rojo. Completa la palabra sin errores para sumarla.' },
-    { name: 'Mira tu progreso en vivo', text: 'Ve tu WPM, precisión y número de palabras actualizarse en tiempo real mientras escribes.' },
-    { name: 'Obtén tu resultado final', text: 'Cuando termina el tiempo, ves tu WPM final, precisión total y puedes compartir tu resultado.' },
-  ],
+  faq: faqItems,
+  howTo: howToItems,
   bibliography: [
-    {
-      name: 'Wikipedia - WPM',
-      url: 'https://en.wikipedia.org/wiki/Words_per_minute',
-    }
+    { name: 'Wikipedia - Palabras por minuto', url: 'https://en.wikipedia.org/wiki/Words_per_minute' },
   ],
-  schemas: [],
+  schemas: [faqSchema, howToSchema, appSchema],
 };

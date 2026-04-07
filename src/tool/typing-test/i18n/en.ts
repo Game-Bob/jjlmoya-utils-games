@@ -4,6 +4,54 @@ const slug = 'typing-speed-test';
 const title = 'Gamified Typing Speed Test | Measure Your Writing Velocity';
 const description = 'Fully offline typing test with addictive gamification. Measure your WPM, accuracy and achievements. Compete with yourself and improve your typing speed.';
 
+const faqItems = [
+  { question: 'What is average typing speed?', answer: 'Average adult speed is 40-60 WPM (words per minute). Proficient typists reach 70-100 WPM. The fastest typists exceed 200 WPM. This test shows you where you stand.' },
+  { question: 'How is WPM calculated?', answer: 'Take correct characters, divide by 5 (average word length), divide by minutes elapsed. This automatically penalizes errors, giving you fair net speed.' },
+  { question: 'Are my results saved?', answer: 'Yes, locally in your browser. Your best WPM is saved automatically. Nobody online sees your results unless you share.' },
+  { question: 'Is it accurate without internet?', answer: 'Completely. This test runs 100% in your browser without sending data to servers. That means millisecond precision, zero network latency.' },
+  { question: 'How long to improve my speed?', answer: 'Noticeable improvements in 2-3 weeks with consistent practice. Dramatic changes (e.g., 50 to 100 WPM) take 3-6 months serious practice.' },
+  { question: 'Can I practice without internet?', answer: 'Sure. This test is 100% offline. Load once, then play without internet. Perfect for travel or WiFi outages.' },
+];
+
+const howToItems = [
+  { name: 'Start typing', text: 'Just start typing. Timer begins automatically on first keystroke. You get 60 seconds.' },
+  { name: 'Type words correctly', text: 'Correct words highlight in cyan. Wrong letters turn red. Complete each word error-free to count.' },
+  { name: 'Watch live progress', text: 'Your WPM, accuracy, and word count update in real-time as you type.' },
+  { name: 'Get final results', text: 'When time ends, see your final WPM, total accuracy, and option to share results.' },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org' as const,
+  '@type': 'FAQPage' as const,
+  mainEntity: faqItems.map((item) => ({
+    '@type': 'Question' as const,
+    name: item.question,
+    acceptedAnswer: { '@type': 'Answer' as const, text: item.answer },
+  })),
+};
+
+const howToSchema = {
+  '@context': 'https://schema.org' as const,
+  '@type': 'HowTo' as const,
+  name: title,
+  description,
+  step: howToItems.map((step) => ({
+    '@type': 'HowToStep' as const,
+    name: step.name,
+    text: step.text,
+  })),
+};
+
+const appSchema = {
+  '@context': 'https://schema.org' as const,
+  '@type': 'SoftwareApplication' as const,
+  name: title,
+  description,
+  applicationCategory: 'UtilitiesApplication' as const,
+  operatingSystem: 'Web' as const,
+  offers: { '@type': 'Offer' as const, price: '0', priceCurrency: 'EUR' },
+};
+
 export const content: GamesToolLocaleContentType = {
   slug,
   title,
@@ -309,55 +357,13 @@ export const content: GamesToolLocaleContentType = {
       html: '<em>Key factor is CONSISTENCY, not intensity. 10 minutes daily beats 2 hours every 2 weeks. Brain learns via spaced repetition, not marathons.</em>',
     },
   ],
-  faq: [
-    {
-      question: 'What is average typing speed?',
-      answer: 'Average adult speed is 40-60 WPM (words per minute). Proficient typists reach 70-100 WPM. The fastest typists exceed 200 WPM. This test shows you where you stand.',
-    },
-    {
-      question: 'How is WPM calculated?',
-      answer: 'Take correct characters, divide by 5 (average word length), divide by minutes elapsed. This automatically penalizes errors, giving you fair net speed.',
-    },
-    {
-      question: 'Are my results saved?',
-      answer: 'Yes, locally in your browser. Your best WPM is saved automatically. Nobody online sees your results unless you share.',
-    },
-    {
-      question: 'Is it accurate without internet?',
-      answer: 'Completely. This test runs 100% in your browser without sending data to servers. That means millisecond precision, zero network latency.',
-    },
-    {
-      question: 'How long to improve my speed?',
-      answer: 'Noticeable improvements in 2-3 weeks with consistent practice. Dramatic changes (e.g., 50 to 100 WPM) take 3-6 months serious practice.',
-    },
-    {
-      question: 'Can I practice without internet?',
-      answer: 'Sure. This test is 100% offline. Load once, then play without internet. Perfect for travel or WiFi outages.',
-    },
-  ],
-  howTo: [
-    {
-      name: 'Start typing',
-      text: 'Just start typing. Timer begins automatically on first keystroke. You get 60 seconds.',
-    },
-    {
-      name: 'Type words correctly',
-      text: 'Correct words highlight in cyan. Wrong letters turn red. Complete each word error-free to count.',
-    },
-    {
-      name: 'Watch live progress',
-      text: 'Your WPM, accuracy, and word count update in real-time as you type.',
-    },
-    {
-      name: 'Get final results',
-      text: 'When time ends, see your final WPM, total accuracy, and option to share results.',
-    },
-  ],
+  faq: faqItems,
+  howTo: howToItems,
   bibliography: [
     {
-      name: 'Wikipedia - WPM',
+      name: 'Wikipedia - Words per minute',
       url: 'https://en.wikipedia.org/wiki/Words_per_minute',
-    }
+    },
   ],
-  schemas: [],
+  schemas: [faqSchema, howToSchema, appSchema],
 };
