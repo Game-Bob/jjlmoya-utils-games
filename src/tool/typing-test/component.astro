@@ -356,7 +356,7 @@ const labels = {
     document.addEventListener("keydown", (e) => {
       if (!GAME.running) return;
       const char = e.key.toLowerCase();
-      if (!/^[a-zàâäèéêëìíîïòóôöùúûüñçáéíóú]$/.test(char)) {
+      if (!/^[a-zàâäèéêëìíîïòóôöùúûüñçáéíóúœæÿ]$/.test(char)) {
         if (char === "backspace") {
           GAME.typed = GAME.typed.slice(0, -1);
           render();
@@ -527,12 +527,12 @@ const labels = {
     word-break: break-word;
   }
 
-  .typing-char {
+  :global(.typing-char) {
     transition: all 0.05s ease;
     color: var(--typing-text-light);
   }
 
-  .typing-char--ok {
+  :global(.typing-char--ok) {
     color: var(--typing-accent);
     font-weight: 900;
     background: rgba(6, 182, 212, 0.15);
@@ -540,7 +540,7 @@ const labels = {
     padding: 0.15rem 0.1rem;
   }
 
-  .typing-char--bad {
+  :global(.typing-char--bad) {
     color: var(--typing-error);
     background: rgba(239, 68, 68, 0.2);
     border-radius: 0.25rem;
@@ -560,7 +560,7 @@ const labels = {
     }
   }
 
-  .typing-char--cur {
+  :global(.typing-char--cur) {
     color: white;
     background: var(--typing-primary);
     font-weight: 900;
@@ -581,7 +581,7 @@ const labels = {
     }
   }
 
-  .typing-complete {
+  :global(.typing-complete) {
     animation: typing-pop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
   }
 
@@ -722,7 +722,7 @@ const labels = {
     min-height: 60px;
   }
 
-  .typing-grid-item {
+  :global(.typing-grid-item) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -735,16 +735,16 @@ const labels = {
     transition: transform 0.2s ease;
   }
 
-  .typing-grid-item:hover {
+  :global(.typing-grid-item:hover) {
     transform: scale(1.1);
   }
 
-  .typing-grid-item--ok {
+  :global(.typing-grid-item--ok) {
     background: var(--typing-accent);
     box-shadow: 0 4px 12px rgba(6, 182, 212, 0.3);
   }
 
-  .typing-grid-item--error {
+  :global(.typing-grid-item--error) {
     background: var(--typing-error);
     box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
   }
