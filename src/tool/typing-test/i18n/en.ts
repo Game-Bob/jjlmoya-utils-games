@@ -355,17 +355,9 @@ export const content: GamesToolLocaleContentType = {
   ],
   bibliography: [
     {
-      name: 'Typing Masters Association - WPM Measurement Standards',
+      name: 'Wikipedia - WPM',
       url: 'https://en.wikipedia.org/wiki/Words_per_minute',
-    },
-    {
-      name: 'MIT Media Lab - Motor Learning Research',
-      url: 'https://media.mit.edu/',
-    },
-    {
-      name: 'Stanford Psychology - Social Comparison and Motivation',
-      url: 'https://www.stanford.edu/',
-    },
+    }
   ],
   schemas: [],
 };

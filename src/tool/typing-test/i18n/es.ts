@@ -120,9 +120,10 @@ export const content: GamesToolLocaleContentType = {
     { name: 'Obtén tu resultado final', text: 'Cuando termina el tiempo, ves tu WPM final, precisión total y puedes compartir tu resultado.' },
   ],
   bibliography: [
-    { name: 'Typing Masters Association', url: 'https://typingmasters.com/' },
-    { name: 'MIT Media Lab - Motor Learning Research', url: 'https://media.mit.edu/' },
-    { name: 'Stanford Psychology - Social Comparison and Motivation', url: 'https://www.stanford.edu/' },
+    {
+      name: 'Wikipedia - WPM',
+      url: 'https://en.wikipedia.org/wiki/Words_per_minute',
+    }
   ],
   schemas: [],
 };
