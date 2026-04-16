@@ -1,7 +1,7 @@
 import type { CategoryLocaleContent } from '../../types';
 
 const slug = 'retos-y-juegos';
-const title = 'Retos y Juegos Virales | Test de Mecanografía y Desafíos Adictivos';
+const title = 'Retos y Juegos Virales: Test de Mecanografía y Desafíos Adictivos';
 const description = 'Desafíos gamificados y juegos virales. Test de mecanografía, retos de velocidad y juegos adictivos 100% offline.';
 
 export const content: CategoryLocaleContent = {
