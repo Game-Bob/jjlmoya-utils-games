@@ -1,3 +1,4 @@
+import { typingTest } from './entry';
 export * from './entry';
 export const TYPING_TEST_TOOL: ToolDefinition = {
   entry: typingTest,
