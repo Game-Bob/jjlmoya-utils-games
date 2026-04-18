@@ -15,7 +15,7 @@ export type {
   ToolDefinition,
 } from './types';
 
-export { ALL_TOOLS } from './tools';
+export { ALL_ENTRIES, ALL_TOOLS } from './tools';
 export { TYPING_TEST_TOOL, typingTest } from './tool/typing-test';
 
 export type { ToolLocaleContent as GamesToolLocaleContent } from './types';
