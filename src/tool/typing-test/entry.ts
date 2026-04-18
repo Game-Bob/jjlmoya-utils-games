@@ -1,9 +1,20 @@
-import type { GamesCategoryEntry } from '../types';
-import { typingTest } from '../tool/typing-test/entry';
+import type { GamesToolEntry, ToolLocaleContent } from '../../types';
 
-export const gamesCategory: GamesCategoryEntry = {
-  icon: 'mdi:gamepad-variant',
-  tools: [typingTest],
+export interface TypingTestUI {
+  words: string;
+  wpm: string;
+  accuracy: string;
+  timeUp: string;
+  playAgain: string;
+  share: string;
+  copied: string;
+}
+
+export type TypingTestLocaleContent = ToolLocaleContent<TypingTestUI>;
+
+export const typingTest: GamesToolEntry<TypingTestUI> = {
+  id: 'typing-test',
+  icons: { bg: 'mdi:keyboard', fg: 'mdi:lightning-bolt' },
   i18n: {
     es: () => import('./i18n/es').then((m) => m.content),
     en: () => import('./i18n/en').then((m) => m.content),
@@ -22,4 +33,3 @@ export const gamesCategory: GamesCategoryEntry = {
     tr: () => import('./i18n/tr').then((m) => m.content),
   },
 };
-
