@@ -1,7 +1,4 @@
 import type { GamesToolEntry, ToolDefinition, ToolLocaleContent } from '../../types';
-import TypingTestComponent from './component.astro';
-import TypingTestSEO from './seo.astro';
-import TypingTestBibliography from './bibliography.astro';
 
 export interface TypingTestUI {
   words: string;
@@ -39,7 +36,7 @@ export const typingTest: GamesToolEntry<TypingTestUI> = {
 
 export const TYPING_TEST_TOOL: ToolDefinition = {
   entry: typingTest,
-  Component: TypingTestComponent,
-  SEOComponent: TypingTestSEO,
-  BibliographyComponent: TypingTestBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };

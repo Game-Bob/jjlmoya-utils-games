@@ -1,5 +1,5 @@
 export { gamesCategory } from './category';
-export { default as GamesCategorySEO } from './category/GamesCategorySEO.astro';
+export const GamesCategorySEO = () => import('./category/GamesCategorySEO.astro').then((m) => m.default);
 
 export type {
   KnownLocale,
