@@ -63,7 +63,7 @@ const labels = {
           <div class="typing-results-label">{labels.words}</div>
           <div class="typing-results-value" id="finalWords">0</div>
         </div>
-        <div class="typing-results-stat typing-results__stat-highlight">
+        <div class="typing-results-stat typing-results-stat-highlight">
           <div class="typing-results-label">{labels.wpm}</div>
           <div class="typing-results-value" id="finalWPM">0</div>
         </div>
@@ -77,11 +77,11 @@ const labels = {
 
       <div class="typing-results-actions">
         <button
-          class="typing-results-btn typing-results__btn-primary"
+          class="typing-results-btn typing-results-btn-primary"
           id="restartBtn">{labels.playAgain}</button
         >
         <button
-          class="typing-results-btn typing-results__btn-secondary"
+          class="typing-results-btn typing-results-btn-secondary"
           id="shareBtn">{labels.share}</button
         >
       </div>
@@ -210,9 +210,9 @@ const labels = {
       const char = target[i];
       let cls = "typing-char";
       if (i < typed.length) {
-        cls += typed[i] === char ? " typing-char--ok" : " typing-char--bad";
+        cls += typed[i] === char ? " typing-char-ok" : " typing-char-bad";
       } else if (i === typed.length) {
-        cls += " typing-char--cur";
+        cls += " typing-char-cur";
       }
       html += `<span class="${cls}">${char}</span>`;
     }
