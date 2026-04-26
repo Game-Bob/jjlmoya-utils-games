@@ -27,61 +27,61 @@ const labels = {
 
 <div class="typing">
   <div class="typing-timer">
-    <div class="typing-timer__bar" id="timerBar"></div>
-    <span class="typing-timer__text" id="timerText">60</span>
+    <div class="typing-timer-bar" id="timerBar"></div>
+    <span class="typing-timer-text" id="timerText">60</span>
   </div>
 
   <div class="typing-stats-live">
-    <div class="typing-stats-live__item">
-      <span class="typing-stats-live__label">{labels.words}</span>
-      <span class="typing-stats-live__value" id="wordCount">0</span>
+    <div class="typing-stats-live-item">
+      <span class="typing-stats-live-label">{labels.words}</span>
+      <span class="typing-stats-live-value" id="wordCount">0</span>
     </div>
-    <div class="typing-stats-live__item">
-      <span class="typing-stats-live__label">{labels.wpm}</span>
-      <span class="typing-stats-live__value" id="wpmLive">0</span>
+    <div class="typing-stats-live-item">
+      <span class="typing-stats-live-label">{labels.wpm}</span>
+      <span class="typing-stats-live-value" id="wpmLive">0</span>
     </div>
-    <div class="typing-stats-live__item">
-      <span class="typing-stats-live__label">{labels.accuracy}</span>
-      <span class="typing-stats-live__value" id="accLive">100%</span>
+    <div class="typing-stats-live-item">
+      <span class="typing-stats-live-label">{labels.accuracy}</span>
+      <span class="typing-stats-live-value" id="accLive">100%</span>
     </div>
   </div>
 
   <div class="typing-arena">
-    <div class="typing-arena__words">
-      <div class="typing-arena__current" id="wordDisplay"></div>
-      <div class="typing-arena__next" id="nextWordDisplay"></div>
+    <div class="typing-arena-words">
+      <div class="typing-arena-current" id="wordDisplay"></div>
+      <div class="typing-arena-next" id="nextWordDisplay"></div>
     </div>
   </div>
 
   <div class="typing-results" id="resultsScreen">
-    <div class="typing-results__overlay"></div>
-    <div class="typing-results__podium">
-      <h2 class="typing-results__title">{labels.timeUp}</h2>
+    <div class="typing-results-overlay"></div>
+    <div class="typing-results-podium">
+      <h2 class="typing-results-title">{labels.timeUp}</h2>
 
-      <div class="typing-results__stats-grid">
-        <div class="typing-results__stat">
-          <div class="typing-results__label">{labels.words}</div>
-          <div class="typing-results__value" id="finalWords">0</div>
+      <div class="typing-results-stats-grid">
+        <div class="typing-results-stat">
+          <div class="typing-results-label">{labels.words}</div>
+          <div class="typing-results-value" id="finalWords">0</div>
         </div>
-        <div class="typing-results__stat typing-results__stat--highlight">
-          <div class="typing-results__label">{labels.wpm}</div>
-          <div class="typing-results__value" id="finalWPM">0</div>
+        <div class="typing-results-stat typing-results__stat-highlight">
+          <div class="typing-results-label">{labels.wpm}</div>
+          <div class="typing-results-value" id="finalWPM">0</div>
         </div>
-        <div class="typing-results__stat">
-          <div class="typing-results__label">{labels.accuracy}</div>
-          <div class="typing-results__value" id="finalAcc">100%</div>
+        <div class="typing-results-stat">
+          <div class="typing-results-label">{labels.accuracy}</div>
+          <div class="typing-results-value" id="finalAcc">100%</div>
         </div>
       </div>
 
-      <div class="typing-results__grid" id="resultGrid"></div>
+      <div class="typing-results-grid" id="resultGrid"></div>
 
-      <div class="typing-results__actions">
+      <div class="typing-results-actions">
         <button
-          class="typing-results__btn typing-results__btn--primary"
+          class="typing-results-btn typing-results__btn-primary"
           id="restartBtn">{labels.playAgain}</button
         >
         <button
-          class="typing-results__btn typing-results__btn--secondary"
+          class="typing-results-btn typing-results__btn-secondary"
           id="shareBtn">{labels.share}</button
         >
       </div>
@@ -260,10 +260,10 @@ const labels = {
 
   function generateGridHTML() {
     const ok = Array(GAME.words.length)
-      .fill('<div class="typing-grid-item typing-grid-item--ok">G</div>')
+      .fill('<div class="typing-grid-item typing-grid-item-ok">G</div>')
       .join("");
     const err = Array(GAME.errors.length)
-      .fill('<div class="typing-grid-item typing-grid-item--error">W</div>')
+      .fill('<div class="typing-grid-item typing-grid-item-error">W</div>')
       .join("");
     return ok + err;
   }
