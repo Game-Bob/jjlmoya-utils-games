@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { GamesToolLocaleContent as GamesToolLocaleContentType } from '../../../index';
 
 const slug = 'test-predkosci-pisania';
@@ -56,8 +57,6 @@ export const content: GamesToolLocaleContentType = {
   slug,
   title,
   description,
-  faqTitle: 'Często Zadawane Pytania',
-  bibliographyTitle: 'Bibliografia',
   ui: {
     words: 'Słowa',
     wpm: 'WPM',
@@ -255,11 +254,6 @@ export const content: GamesToolLocaleContentType = {
   ],
   faq: faqItems,
   howTo: howToItems,
-  bibliography: [
-    {
-      name: 'Wikipedia - Słowa na minutę',
-      url: 'https://pl.wikipedia.org/wiki/Words_per_minute',
-    },
-  ],
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
 };

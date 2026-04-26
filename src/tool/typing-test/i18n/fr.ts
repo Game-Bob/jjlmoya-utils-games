@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { GamesToolLocaleContent as GamesToolLocaleContentType } from '../../../index';
 
 const slug = 'test-vitesse-dactylographie';
@@ -56,8 +57,6 @@ export const content: GamesToolLocaleContentType = {
   slug,
   title,
   description,
-  faqTitle: 'Questions Fréquemment Posées',
-  bibliographyTitle: 'Références',
   ui: {
     words: 'Mots',
     wpm: 'MPM',
@@ -399,11 +398,6 @@ export const content: GamesToolLocaleContentType = {
       text: 'Quand le temps s\'écoule, voyez votre MPM final, votre précision totale et l\'option de partager les résultats.',
     },
   ],
-  bibliography: [
-    {
-      name: 'Wikipedia - Mots par minute',
-      url: 'https://en.wikipedia.org/wiki/Words_per_minute',
-    },
-  ],
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
 };

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { GamesToolLocaleContent as GamesToolLocaleContentType } from '../../../index';
 
 const slug = 'tes-kecepatan-mengetik';
@@ -56,8 +57,6 @@ export const content: GamesToolLocaleContentType = {
   slug,
   title,
   description,
-  faqTitle: 'Pertanyaan Umum',
-  bibliographyTitle: 'Referensi',
   ui: {
     words: 'Kata',
     wpm: 'KPM',
@@ -357,11 +356,6 @@ export const content: GamesToolLocaleContentType = {
   ],
   faq: faqItems,
   howTo: howToItems,
-  bibliography: [
-    {
-      name: 'Wikipedia - Kata per menit',
-      url: 'https://id.wikipedia.org/wiki/Kata_per_menit',
-    },
-  ],
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
 };

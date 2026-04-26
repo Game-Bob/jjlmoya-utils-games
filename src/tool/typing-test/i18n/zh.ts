@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { GamesToolLocaleContent as GamesToolLocaleContentType } from '../../../index';
 
 const slug = 'typing-speed-test';
@@ -56,8 +57,6 @@ export const content: GamesToolLocaleContentType = {
   slug,
   title,
   description,
-  faqTitle: '常见问题解答',
-  bibliographyTitle: '参考文献',
   ui: {
     words: '词数',
     wpm: 'WPM',
@@ -258,11 +257,6 @@ export const content: GamesToolLocaleContentType = {
   ],
   faq: faqItems,
   howTo: howToItems,
-  bibliography: [
-    {
-      name: '维基百科 - 每分钟字数',
-      url: 'https://zh.wikipedia.org/wiki/%E6%AF%8F%E5%88%86%E9%92%9F%E5%AD%97%E6%95%B0',
-    },
-  ],
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
 };

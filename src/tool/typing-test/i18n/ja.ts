@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { GamesToolLocaleContent as GamesToolLocaleContentType } from '../../../index';
 
 const slug = 'typing-speed-test';
@@ -56,8 +57,6 @@ export const content: GamesToolLocaleContentType = {
   slug,
   title,
   description,
-  faqTitle: 'よくある質問',
-  bibliographyTitle: '参考文献',
   ui: {
     words: '語数',
     wpm: 'WPM',
@@ -326,11 +325,6 @@ export const content: GamesToolLocaleContentType = {
   ],
   faq: faqItems,
   howTo: howToItems,
-  bibliography: [
-    {
-      name: 'Wikipedia - タイピング',
-      url: 'https://ja.wikipedia.org/wiki/%E3%82%BF%E3%82%A4%E3%83%94%E3%83%B3%E3%82%B0',
-    },
-  ],
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
 };

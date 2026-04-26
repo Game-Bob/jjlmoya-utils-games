@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { GamesToolLocaleContent as GamesToolLocaleContentType } from '../../../index';
 
 const slug = 'tippgeschwindigkeit-test';
@@ -56,8 +57,6 @@ export const content: GamesToolLocaleContentType = {
   slug,
   title,
   description,
-  faqTitle: 'Häufig gestellte Fragen',
-  bibliographyTitle: 'Quellen',
   ui: {
     words: 'Wörter',
     wpm: 'WPM',
@@ -338,11 +337,6 @@ export const content: GamesToolLocaleContentType = {
   ],
   faq: faqItems,
   howTo: howToItems,
-  bibliography: [
-    {
-      name: 'Wikipedia - Wörter pro Minute',
-      url: 'https://de.wikipedia.org/wiki/W%C3%B6rter_pro_Minute',
-    },
-  ],
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
 };

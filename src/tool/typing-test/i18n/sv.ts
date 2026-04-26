@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { GamesToolLocaleContent as GamesToolLocaleContentType } from '../../../index';
 
 const slug = 'typtest-svensk';
@@ -56,8 +57,6 @@ export const content: GamesToolLocaleContentType = {
   slug,
   title,
   description,
-  faqTitle: 'Vanliga Frågor',
-  bibliographyTitle: 'Referenser',
   ui: {
     words: 'Ord',
     wpm: 'WPM',
@@ -186,11 +185,6 @@ export const content: GamesToolLocaleContentType = {
   ],
   faq: faqItems,
   howTo: howToItems,
-  bibliography: [
-    {
-      name: 'Wikipedia - Words per minute',
-      url: 'https://en.wikipedia.org/wiki/Words_per_minute',
-    },
-  ],
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
 };

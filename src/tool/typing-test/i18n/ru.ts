@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { GamesToolLocaleContent as GamesToolLocaleContentType } from '../../../index';
 
 const slug = 'test-skorosti-pechati';
@@ -56,8 +57,6 @@ export const content: GamesToolLocaleContentType = {
   slug,
   title,
   description,
-  faqTitle: 'Часто Задаваемые Вопросы',
-  bibliographyTitle: 'Источники',
   ui: {
     words: 'Слова',
     wpm: 'WPM',
@@ -250,11 +249,6 @@ export const content: GamesToolLocaleContentType = {
   ],
   faq: faqItems,
   howTo: howToItems,
-  bibliography: [
-    {
-      name: 'Википедия — Слов в минуту',
-      url: 'https://ru.wikipedia.org/wiki/%D0%A1%D0%BB%D0%BE%D0%B2_%D0%B2_%D0%BC%D0%B8%D0%BD%D1%83%D1%82%D1%83',
-    },
-  ],
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
 };

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { GamesToolLocaleContent as GamesToolLocaleContentType } from '../../../index';
 
 const slug = 'yazim-hizi-testi';
@@ -56,8 +57,6 @@ export const content: GamesToolLocaleContentType = {
   slug,
   title,
   description,
-  faqTitle: 'Sıkça Sorulan Sorular',
-  bibliographyTitle: 'Kaynaklar',
   ui: {
     words: 'Kelime',
     wpm: 'WPM',
@@ -169,11 +168,6 @@ export const content: GamesToolLocaleContentType = {
   ],
   faq: faqItems,
   howTo: howToItems,
-  bibliography: [
-    {
-      name: 'Vikipedi - Dakikadaki kelime sayısı',
-      url: 'https://tr.wikipedia.org/wiki/WPM',
-    },
-  ],
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
 };

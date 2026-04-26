@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { GamesToolLocaleContent as GamesToolLocaleContentType } from '../../../index';
 
 const slug = 'typing-speed-test';
@@ -56,8 +57,6 @@ export const content: GamesToolLocaleContentType = {
   slug,
   title,
   description,
-  faqTitle: '자주 묻는 질문',
-  bibliographyTitle: '참고 문헌',
   ui: {
     words: '단어',
     wpm: 'WPM',
@@ -258,11 +257,6 @@ export const content: GamesToolLocaleContentType = {
   ],
   faq: faqItems,
   howTo: howToItems,
-  bibliography: [
-    {
-      name: 'Wikipedia - 타자',
-      url: 'https://ko.wikipedia.org/wiki/%ED%83%80%EC%9E%90',
-    },
-  ],
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
 };

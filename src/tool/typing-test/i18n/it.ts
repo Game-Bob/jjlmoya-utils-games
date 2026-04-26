@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { GamesToolLocaleContent as GamesToolLocaleContentType } from '../../../index';
 
 const slug = 'test-velocita-scrittura';
@@ -56,8 +57,6 @@ export const content: GamesToolLocaleContentType = {
   slug,
   title,
   description,
-  faqTitle: 'Domande Frequenti',
-  bibliographyTitle: 'Riferimenti',
   ui: {
     words: 'Parole',
     wpm: 'WPM',
@@ -357,11 +356,6 @@ export const content: GamesToolLocaleContentType = {
   ],
   faq: faqItems,
   howTo: howToItems,
-  bibliography: [
-    {
-      name: 'Wikipedia - Parole al minuto',
-      url: 'https://it.wikipedia.org/wiki/Parole_al_minuto',
-    },
-  ],
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
 };
