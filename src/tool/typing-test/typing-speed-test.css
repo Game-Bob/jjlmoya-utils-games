@@ -8,6 +8,13 @@
     --typing-border: #e2e8f0;
     --typing-error: #ef4444;
     --typing-white: #fff;
+
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    background: var(--typing-bg);
+    color: var(--typing-text);
   }
 
   .theme-dark .typing {
@@ -15,15 +22,6 @@
     --typing-text: #f1f5f9;
     --typing-text-light: #cbd5e1;
     --typing-border: #334155;
-  }
-
-  .typing {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 2rem 1.5rem;
-    background: var(--typing-bg);
-    color: var(--typing-text);
   }
 
   .typing-timer {
@@ -119,7 +117,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 0.2rem;
-    word-break: break-word;
+    word-break: break-all;
     min-height: 120px;
   }
 
@@ -147,7 +145,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 0.2rem;
-    word-break: break-word;
+    word-break: break-all;
   }
 
   .typing-char {
@@ -184,7 +182,7 @@
   }
 
   .typing-char-cur {
-    color: white;
+    color: var(--typing-white);
     background: var(--typing-primary);
     font-weight: 900;
     border-radius: 0.25rem;
@@ -205,7 +203,7 @@
   }
 
   .typing-complete {
-    animation: typing-pop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+    animation: typing-pop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
 
   @keyframes typing-pop {
@@ -260,7 +258,7 @@
     align-items: center;
     justify-content: center;
     z-index: 1000;
-    animation: typing-fadeIn 0.3s ease;
+    animation: typing-fade-in 0.3s ease;
   }
 
   .typing-results-overlay {
@@ -278,7 +276,7 @@
     max-width: 500px;
     width: 90%;
     text-align: center;
-    animation: typing-popIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    animation: typing-pop-in 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   }
 
@@ -331,9 +329,7 @@
     margin: 2rem 0;
     padding: 1.5rem;
     background: rgba(244, 63, 94, 0.05);
-    border-radius: 0.75rem;
-    font-family: Outfit, sans-serif;
-    font-size: 1rem;
+    border-radius: 0.75rem; font-size: 1rem;
     line-height: normal;
     white-space: pre-wrap;
     display: flex;
@@ -354,7 +350,7 @@
     border-radius: 0.5rem;
     font-weight: 900;
     font-size: 0.8rem;
-    color: white;
+    color: var(--typing-white);
     transition: transform 0.2s ease;
   }
 
@@ -393,7 +389,7 @@
 
   .typing-results-btn-primary {
     background: var(--typing-primary);
-    color: white;
+    color: var(--typing-white);
   }
 
   .typing-results-btn-primary:hover {
@@ -411,7 +407,7 @@
   }
 
   .typing-modal {
-    display: none !important;
+    display: none;
     position: fixed;
     inset: 0;
     background: rgba(0, 0, 0, 0.5);
@@ -419,11 +415,11 @@
     align-items: center;
     justify-content: center;
     z-index: 1000;
-    animation: typing-fadeIn 0.2s ease;
+    animation: typing-fade-in 0.2s ease;
     pointer-events: none;
   }
 
-  @keyframes typing-fadeIn {
+  @keyframes typing-fade-in {
     from {
       opacity: 0;
     }
@@ -440,10 +436,10 @@
     max-width: 400px;
     width: 100%;
     text-align: center;
-    animation: typing-popIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    animation: typing-pop-in 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
 
-  @keyframes typing-popIn {
+  @keyframes typing-pop-in {
     from {
       opacity: 0;
       transform: scale(0.8);
@@ -475,7 +471,7 @@
     background: var(--typing-primary);
     border: none;
     border-radius: 0.5rem;
-    color: white;
+    color: var(--typing-white);
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -506,9 +502,7 @@
     margin: 2rem 0;
     padding: 1.5rem;
     background: rgba(244, 63, 94, 0.05);
-    border-radius: 0.75rem;
-    font-family: monospace;
-    font-size: 1.5rem;
+    border-radius: 0.75rem; font-size: 1.5rem;
     line-height: 1.8;
     white-space: pre;
     word-break: break-all;
