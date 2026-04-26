@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sed -i '1s/^/import { bibliography } from '\\\\''..\\\\/bibliography'\\\\'';\\\\n/' zh.ts)",
+      "Bash(sed -i '1s/^/import { bibliography } from '\\\\''..\\\\/bibliography'\\\\'';\\\\n/' it.ts)",
+      "Bash(sed -i '1s/^/import { bibliography } from '\\\\''..\\\\/bibliography'\\\\'';\\\\n/' pt.ts)",
+      "Bash(sed -i '1s/^/import { bibliography } from '\\\\''..\\\\/bibliography'\\\\'';\\\\n/' id.ts)",
+      "Bash(sed -i '1s/^/import { bibliography } from '\\\\''..\\\\/bibliography'\\\\'';\\\\n/' nl.ts)",
+      "Bash(git diff *)",
+      "Bash(git restore *)"
+    ],
+    "additionalDirectories": [
+      "d:\\code\\jjlmoya-utils-bike\\src\\pages\\[locale]"
+    ]
+  }
+}
