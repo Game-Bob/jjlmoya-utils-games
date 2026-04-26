@@ -162,6 +162,7 @@ export default [
             "max-lines-per-function": ["error", { max: 50, skipBlankLines: true, skipComments: true }],
             "complexity": "off",
             "no-comments/disallowComments": "off",
+            "custom/no-css-comments": "off",
         },
     },
     {
