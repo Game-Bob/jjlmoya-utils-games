@@ -1,2 +1,2 @@
 src/tool/typing-test/component.astro
-src/pages/[locale]/[slug].astro
+src/pages/\[locale\]/\[slug\].astro

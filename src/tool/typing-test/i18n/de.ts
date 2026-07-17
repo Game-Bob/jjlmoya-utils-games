@@ -109,7 +109,7 @@ export const content: GamesToolLocaleContentType = {
     },
     {
       type: 'paragraph',
-      html: 'Ein <strong>Schreibgeschwindigkeitstest</strong> ist das präziseste Werkzeug, um zu bewerten, wie viele Wörter pro Minute (WPM) Sie fehlerfrei tippen können. Ob Sie Programmierer, Autor oder Student sind oder einfach viel Zeit am Keyboard verbringen – die eigene Geschwindigkeit zu kennen, ist der erste Schritt zur Produktivitätssteigerung. Dieser Test misst nicht nur das Tempo, sondern die <em>Nettogenauigkeit</em>: Es zählt die Geschwindigkeit abzüglich der Fehler.',
+      html: 'Ein <strong>Schreibgeschwindigkeitstest</strong> ist das präziseste Werkzeug, um zu bewerten, wie viele Wörter pro Minute (WPM) Sie fehlerfrei tippen können. Ob Sie Programmierer, Autor oder Student sind oder einfach viel Zeit am Keyboard verbringen - die eigene Geschwindigkeit zu kennen, ist der erste Schritt zur Produktivitätssteigerung. Dieser Test misst nicht nur das Tempo, sondern die <em>Nettogenauigkeit</em>: Es zählt die Geschwindigkeit abzüglich der Fehler.',
     },
     {
       type: 'paragraph',
@@ -154,7 +154,7 @@ export const content: GamesToolLocaleContentType = {
     },
     {
       type: 'paragraph',
-      html: 'Im Jahr 2026 ist schnelles und präzises Tippen keine reine „Sekretariatsaufgabe“ mehr. Es ist eine <strong>Schlüsselqualifikation</strong> in fast jedem wissensbasierten Beruf:',
+      html: 'Im Jahr 2026 ist schnelles und präzises Tippen keine reine \"Sekretariatsaufgabe\" mehr. Es ist eine <strong>Schlüsselqualifikation</strong> in fast jedem wissensbasierten Beruf:',
     },
     {
       type: 'list',
@@ -228,7 +228,7 @@ export const content: GamesToolLocaleContentType = {
       items: [
         '<strong>Vokabular-Vertrautheit:</strong> Bei Fachbegriffen aus dem eigenen Bereich ist man bis zu 30 % schneller.',
         '<strong>Tastaturlayout:</strong> QWERTZ-Nutzer haben oft etwas geringere WPM als DVORAK-Nutzer, dafür ist das Layout standardisiert.',
-        '<strong>Wortlänge:</strong> Lange Wörter bremsen um 15-20 % (z. B. „Donaudampfschifffahrtsgesellschaft“ vs. „Haus“).',
+        '<strong>Wortlänge:</strong> Lange Wörter bremsen um 15-20 % (z. B. \"Donaudampfschifffahrtsgesellschaft\" vs. \"Haus\").',
         '<strong>Ermüdung:</strong> Nach 10 Minuten Dauertipper sinkt die Genauigkeit spürbar.',
         '<strong>Zeitdruck:</strong> Ein 1-Minuten-Test erzeugt mehr Stress (und Tippfehler) als ein 5-Minuten-Durchlauf.',
       ],
@@ -250,7 +250,7 @@ export const content: GamesToolLocaleContentType = {
       type: 'list',
       items: [
         '<strong>Woche 1-2 (Form vor Speed):</strong> 10 Min. täglich NUR auf die Fingerstellung achten. Geschwindigkeit ignorieren. Die Form macht 90 % des Erfolgs aus.',
-        '<strong>Woche 3-4 (Blind schreiben):</strong> 15 Min. täglich. Tippen, ohne auf die Tasten zu sehen. Das Tempo sinkt erst mal – das ist normal bei neuen neuronalen Mustern.',
+        '<strong>Woche 3-4 (Blind schreiben):</strong> 15 Min. täglich. Tippen, ohne auf die Tasten zu sehen. Das Tempo sinkt erst mal - das ist normal bei neuen neuronalen Mustern.',
         '<strong>Woche 5-8 (Konstanz):</strong> 20 Min. täglich. Mix aus Naturalschreiben (E-Mails) und Tests. Erwartete Steigerung: 5-8 WPM pro Woche.',
         '<strong>Woche 9-12 (Spezialisierung):</strong> Fokus auf Problemwörter. Programmierer üben Symbole, Autoren Satzzeichen. 15-20 Min. täglich reichen aus.',
       ],
