@@ -337,6 +337,8 @@ export const content: GamesToolLocaleContentType = {
       type: 'paragraph',
       html: '<em>De belangrijkste factor is CONSISTENTIE, niet intensiteit. 10 minuten dagelijks is beter dan 2 uur elke 2 weken.</em>',
     },
+    { type: 'paragraph', html: '<strong>Dagelijkse oefening:</strong> Korte, vaste sessies bouwen betrouwbare vingerpatronen op. Tien geconcentreerde minuten per dag werken beter dan af en toe een lange sessie.' },
+    { type: 'paragraph', html: 'Oefen eerst nauwkeurig en verhoog de snelheid pas wanneer je foutenpercentage stabiel blijft. Zo ontwikkel je snelheid die ook in echte documenten bruikbaar is.' },
   ],
   faq: faqItems,
   howTo: howToItems,
