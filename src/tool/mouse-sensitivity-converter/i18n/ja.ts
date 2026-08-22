@@ -4,7 +4,7 @@ import { bibliography } from '../bibliography';
 
 const slug = 'mouse-sensitivity-converter-between-games';
 const title = 'ゲーム間マウス感度コンバーター';
-const description = '360度回転に必要な物理距離とeDPIを維持しながら、ゲーム間でマウス感度を正確に変換します。';
+const description = '競技ゲーム間で物理的なマウス移動距離を一致させます。独立したDPI設定で腰撃ち感度を変換し、振り向きcmとeDPIを算出します。';
 
 const faqItems = [
   {
@@ -44,7 +44,7 @@ const howToItems = [
   },
   {
     "name": "計算結果をコピー",
-    "text": "表示された数値ゲーム内の設定に入力します。"
+    "text": "表示された数値をゲーム内の設定に入力します。"
   },
   {
     "name": "実測テスト",
@@ -81,7 +81,7 @@ const appSchema: WithContext<SoftwareApplication> = {
   description,
   applicationCategory: 'UtilitiesApplication',
   operatingSystem: 'Web',
-  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'JPY' },
 };
 
 export const content: MouseSensitivityLocaleContent = {
@@ -111,7 +111,7 @@ export const content: MouseSensitivityLocaleContent = {
     "copyResultLabel": "結果をコピー",
     "copiedLabel": "コピー完了",
     "swapLabel": "変換方向を反転",
-    "swapButtonLabel": "ゲームを入れ替える",
+    "swapButtonLabel": "入れ替え",
     "shareLabel": "リンクをコピー",
     "shareCopiedLabel": "リンクをコピーしました",
     "presetsLabel": "エイムプリセット",
@@ -134,7 +134,7 @@ export const content: MouseSensitivityLocaleContent = {
     "formulaLabel": "感度変換公式",
     "formulaText": "変換先感度 = 変換元感度 x 変換元DPI x 変換元Yaw / (変換先DPI x 変換先Yaw)",
     "verificationTitle": "マウスパッド上での実測確認",
-    "verificationText": "マウスパッド上に目印をつけ、両方のゲームで同じ360度回転を行って移動距離を確認します。ゲーム固有の設定誤差を最小限に抑えます。",
+    "verificationText": "マウスパッド上に目印をつけ、両方のゲームで同じ360度回転を行って移動距離を確認します。",
     "baseAimOnlyText": "腰撃ち（Hipfire）専用の計算です。",
     "invalidInputText": "正の数値を入力してください。",
     "openGameMenuLabel": "ゲームプロファイルメニューを開く"
@@ -142,16 +142,16 @@ export const content: MouseSensitivityLocaleContent = {
   seo: [
     {
         "type": "title",
-        "text": "物理移動距離を維持してマウス感度を正確に計算および変換するガイド",
+        "text": "物理移動距離を維持してマウス感度を正確に計算および変換",
         "level": 2
     },
     {
         "type": "paragraph",
-        "html": "ゲームごとに感度数値の意味は異なります。このコンバーターは各エンジンのYaw係数を用いて<strong>360度回転に必要な振り向きcm距離</strong>を正確に維持します。異なるDPI設定間でもスムーズなエイム移行が可能です。"
+        "html": "ゲームごとに感度数値の意味は異なります。このコンバーターは各エンジンのYaw係数を用いて<strong>360度回転に必要な振り向きcm距離</strong>を正確に維持します。"
     },
     {
         "type": "paragraph",
-        "html": "計算結果は腰撃ち（Hipfire）の水平回転に基づいています。照準器（ADS）や倍率スコープは個別の係数計算が必要です。"
+        "html": "計算結果は腰撃ち（Hipfire）の水平回転に基づいています。"
     },
     {
         "type": "title",
@@ -160,7 +160,7 @@ export const content: MouseSensitivityLocaleContent = {
     },
     {
         "type": "paragraph",
-        "html": "<strong>変換先感度 = 変換元感度 x 変換元DPI x 変換元Yaw / (変換先DPI x 変換先Yaw)</strong>。Yaw係数はマウスの1カウント入力に対してゲーム内のカメラが何度回転するかを示す定数です。"
+        "html": "<strong>変換先感度 = 変換元感度 x 変換元DPI x 変換元Yaw / (変換先DPI x 変換先Yaw)</strong>"
     },
     {
         "type": "table",
@@ -194,12 +194,12 @@ export const content: MouseSensitivityLocaleContent = {
     },
     {
         "type": "paragraph",
-        "html": "CS2、Valorant、Apex Legends、Overwatch 2、Fortnite、SourceおよびQuake系エンジン、Aim Labに対応しています。公式設定値と有志コミュニティの計測値を元に最適な変換結果を提供します。"
+        "html": "CS2、Valorant、Apex Legends、Overwatch 2、Fortnite、SourceおよびQuake系エンジンに対応しています。"
     },
     {
         "type": "tip",
-        "title": "Fortniteの感度入力形式について",
-        "html": "画面に表示されているパーセント数値をそのまま入力します（例: 7%の場合は <strong>7</strong> と入力してください）。"
+        "title": "Fortniteの入力形式",
+        "html": "画面に表示されているパーセント数値をそのまま入力します（例: 7%の場合は <strong>7</strong> と入力）。"
     },
     {
         "type": "title",
@@ -208,7 +208,7 @@ export const content: MouseSensitivityLocaleContent = {
     },
     {
         "type": "paragraph",
-        "html": "自機を中心に360度回転する物理距離は、画面の視野角（FOV）に左右されません。ただし、画面上の視覚的な移動速度の体感はFOVによって変化するため注意が必要です。"
+        "html": "自機を中心に360度回転する物理距離は、画面の視野角（FOV）に左右されません。"
     },
     {
         "type": "title",
@@ -218,21 +218,21 @@ export const content: MouseSensitivityLocaleContent = {
     {
         "type": "list",
         "items": [
-            "OSおよびマウスドライバーの加速機能を完全無効にします。",
-            "マウスパッドの端にマウスの端を合わせ、目印となる壁の壁面を狙います。",
-            "真後ろを経由して正確に360度回転させ、定尺で距離を計測します。",
-            "必要に応じて設定画面の最低単位で数値を調整します。"
+            "マウス加速機能を無効にします。",
+            "マウスパッドの端にマウスを合わせます。",
+            "正確に360度回転させ移動距離を計測します。",
+            "必要に応じて数値を微調整します。"
         ]
     },
     {
         "type": "tip",
         "title": "実測確認を推奨",
-        "html": "ゲームのアップデートによる仕様変更を防ぐため、実際の移動距離を目視確認してください。"
+        "html": "実際の移動距離をマウスパッド上で目視確認してください。"
     }
 ],
   faqTitle: 'マウス感度変換に関するよくある質問',
   faq: faqItems,
-  bibliographyTitle: 'Sources',
+  bibliographyTitle: '情報源およびキャリブレーション参照',
   bibliography,
   howTo: howToItems,
   schemas: [appSchema, faqSchema, howToSchema],

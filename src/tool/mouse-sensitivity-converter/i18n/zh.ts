@@ -4,7 +4,7 @@ import { bibliography } from '../bibliography';
 
 const slug = 'mouse-sensitivity-converter-between-games';
 const title = '遊戲滑鼠靈敏度轉換器';
-const description = '在不同遊戲之間精確轉換滑鼠靈敏度，保持 360 度旋轉所需的實體移動距離與 eDPI。';
+const description = '在競技遊戲之間精確轉換滑鼠靈敏度，保持 360 度旋轉所需的實體移動距離與 eDPI。';
 
 const faqItems = [
   {
@@ -81,7 +81,7 @@ const appSchema: WithContext<SoftwareApplication> = {
   description,
   applicationCategory: 'UtilitiesApplication',
   operatingSystem: 'Web',
-  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'TWD' },
 };
 
 export const content: MouseSensitivityLocaleContent = {
@@ -111,7 +111,7 @@ export const content: MouseSensitivityLocaleContent = {
     "copyResultLabel": "複製結果",
     "copiedLabel": "已複製",
     "swapLabel": "反向轉換",
-    "swapButtonLabel": "對調遊戲",
+    "swapButtonLabel": "對調",
     "shareLabel": "複製分享連結",
     "shareCopiedLabel": "連結已複製",
     "presetsLabel": "肌肉記憶預設檔",
@@ -134,7 +134,7 @@ export const content: MouseSensitivityLocaleContent = {
     "formulaLabel": "靈敏度轉換公式",
     "formulaText": "目標靈敏度 = 來源靈敏度 x 來源 DPI x 來源 Yaw / (目標 DPI x 目標 Yaw)",
     "verificationTitle": "滑鼠墊實體校正",
-    "verificationText": "在滑鼠墊上標記起點，並在兩個遊戲中分別進行一次完整的 360 度腰射旋轉以驗證距離。確保設定吻合。",
+    "verificationText": "在滑鼠墊上標記起點，並在兩個遊戲中分別進行一次完整的 360 度腰射旋轉以驗證距離。",
     "baseAimOnlyText": "僅適用於基礎水平腰射（Hipfire）。",
     "invalidInputText": "請輸入大於 0 的正數。",
     "openGameMenuLabel": "開啟遊戲設定檔選單"
@@ -147,20 +147,20 @@ export const content: MouseSensitivityLocaleContent = {
     },
     {
         "type": "paragraph",
-        "html": "不同遊戲中的靈敏度數值含義並不相同。本轉換器利用各遊戲引擎的 Yaw 係數，精確維持您在滑鼠墊上 <strong>360 度轉身所需的 cm 實體距離</strong>。無論 DPI 是否相同均可精準換算。"
+        "html": "不同遊戲中的靈敏度數值含義並不相同。本轉換器利用各遊戲引擎的 Yaw 係數，精確維持您在滑鼠墊上 <strong>360 度轉身所需的 cm 實體距離</strong>。"
     },
     {
         "type": "paragraph",
-        "html": "計算結果專為基礎水平腰射（Hipfire）設計，開鏡瞄準 (ADS) 請另行校正。"
+        "html": "計算結果專為基礎水平腰射（Hipfire）設計。"
     },
     {
         "type": "title",
-        "text": "靈敏度轉換計算公式與 Yaw 係數說明",
+        "text": "靈敏度轉換計算公式與 Yaw 係數",
         "level": 2
     },
     {
         "type": "paragraph",
-        "html": "<strong>目標靈敏度 = 來源靈敏度 x 來源 DPI x 來源 Yaw / (目標 DPI x 目標 Yaw)</strong>。Yaw 係數代表滑鼠傳送單個 Counts 時視角旋轉的角度。"
+        "html": "<strong>目標靈敏度 = 來源靈敏度 x 來源 DPI x 來源 Yaw / (目標 DPI x 目標 Yaw)</strong>"
     },
     {
         "type": "table",
@@ -194,11 +194,11 @@ export const content: MouseSensitivityLocaleContent = {
     },
     {
         "type": "paragraph",
-        "html": "支援 CS2、特戰英豪 (Valorant)、Apex 英雄、鬥陣特攻 2、Fortnite、Source 及 Quake 引擎與 Aim Lab。"
+        "html": "支援 CS2、特戰英豪 (Valorant)、Apex 英雄、鬥陣特攻 2、Fortnite、Source 及 Quake 引擎。"
     },
     {
         "type": "tip",
-        "title": "Fortnite 輸入格式提醒",
+        "title": "Fortnite 輸入格式",
         "html": "請直接輸入遊戲顯示的百分比數字（例如 7% 請輸入 <strong>7</strong>）。"
     },
     {
@@ -227,12 +227,12 @@ export const content: MouseSensitivityLocaleContent = {
     {
         "type": "tip",
         "title": "建議進行實體測試",
-        "html": "遊戲更新或選單四捨五入可能產生微小誤差，請在滑鼠墊上實測確認。"
+        "html": "請在滑鼠墊上進行實測確認，以達成完美的肌肉記憶轉移。"
     }
 ],
   faqTitle: '滑鼠靈敏度轉換常見問題',
   faq: faqItems,
-  bibliographyTitle: 'Sources',
+  bibliographyTitle: '參考來源與校正文獻',
   bibliography,
   howTo: howToItems,
   schemas: [appSchema, faqSchema, howToSchema],

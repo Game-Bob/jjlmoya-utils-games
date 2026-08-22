@@ -4,7 +4,7 @@ import { bibliography } from '../bibliography';
 
 const slug = 'mouse-sensitivity-converter-between-games';
 const title = '게임 간 마우스 감도 변환기';
-const description = '360도 회전에 필요한 실제 마우스 이동 거리와 eDPI를 유지하면서 게임 간 마우스 감도를 변환하세요.';
+const description = '경쟁형 게임 간에 실제 마우스 이동 거리를 일치시키세요. 독립된 DPI 값으로 지향사격 감도를 변환하고 360도 cm 및 eDPI를 계산합니다.';
 
 const faqItems = [
   {
@@ -81,7 +81,7 @@ const appSchema: WithContext<SoftwareApplication> = {
   description,
   applicationCategory: 'UtilitiesApplication',
   operatingSystem: 'Web',
-  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'KRW' },
 };
 
 export const content: MouseSensitivityLocaleContent = {
@@ -111,7 +111,7 @@ export const content: MouseSensitivityLocaleContent = {
     "copyResultLabel": "결과 복사",
     "copiedLabel": "복사됨",
     "swapLabel": "변환 방향 반전",
-    "swapButtonLabel": "게임 서로 바꾸기",
+    "swapButtonLabel": "맞바꾸기",
     "shareLabel": "링크 복사",
     "shareCopiedLabel": "링크가 복사되었습니다",
     "presetsLabel": "에임 프리셋",
@@ -134,7 +134,7 @@ export const content: MouseSensitivityLocaleContent = {
     "formulaLabel": "감도 변환 공식",
     "formulaText": "목표 감도 = 원본 감도 x 원본 DPI x 원본 Yaw / (목표 DPI x 목표 Yaw)",
     "verificationTitle": "마우스패드 실제 측정",
-    "verificationText": "마우스패드에 시작 위치를 표시하고 두 게임 모두에서 동일하게 360도 회전을 수행하여 거리를 비교하세요. 미세한 오차를 미세 조정할 수 있습니다.",
+    "verificationText": "마우스패드에 시작 위치를 표시하고 두 게임 모두에서 동일하게 360도 회전을 수행하여 거리를 비교하세요.",
     "baseAimOnlyText": "지향사격(Hipfire) 전용 변환입니다.",
     "invalidInputText": "양수 값을 입력해 주세요.",
     "openGameMenuLabel": "게임 프로필 메뉴 열기"
@@ -142,16 +142,16 @@ export const content: MouseSensitivityLocaleContent = {
   seo: [
     {
         "type": "title",
-        "text": "실제 이동 거리를 유지하는 마우스 감도 변환 완벽 가이드",
+        "text": "실제 이동 거리를 유지하는 마우스 감도 변환 가이드",
         "level": 2
     },
     {
         "type": "paragraph",
-        "html": "감도 수치는 게임마다 의미하는 바가 다릅니다. 이 변환기는 각 게임의 Yaw 상수를 사용하여 <strong>360도 회전 cm 거리</strong>를 정확하게 보존합니다. 서로 다른 DPI 설정 간에도 일과된 에임 감각을 유지할 수 있습니다."
+        "html": "감도 수치는 게임마다 의미하는 바가 다릅니다. 이 변환기는 각 게임의 Yaw 상수를 사용하여 <strong>360도 회전 cm 거리</strong>를 정확하게 보존합니다."
     },
     {
         "type": "paragraph",
-        "html": "계산 결과는 기본 수평 지향사격(Hipfire) 기준이며 정밀 조준(ADS)은 별도 보정이 필요할 수 있습니다."
+        "html": "계산 결과는 기본 수평 지향사격(Hipfire) 기준입니다."
     },
     {
         "type": "title",
@@ -160,7 +160,7 @@ export const content: MouseSensitivityLocaleContent = {
     },
     {
         "type": "paragraph",
-        "html": "<strong>목표 감도 = 원본 감도 x 원본 DPI x 원본 Yaw / (목표 DPI x 목표 Yaw)</strong>. Yaw 상수는 마우스의 1 카운트 입력당 카메라가 회전하는 각도를 의미합니다."
+        "html": "<strong>목표 감도 = 원본 감도 x 원본 DPI x 원본 Yaw / (목표 DPI x 목표 Yaw)</strong>"
     },
     {
         "type": "table",
@@ -194,11 +194,11 @@ export const content: MouseSensitivityLocaleContent = {
     },
     {
         "type": "paragraph",
-        "html": "CS2, 발로란트, 에이펙스 레전드, 오버워치 2, 포트나이트, 소스 및 퀘이크 엔진, 에임 랩을 공식 지원합니다."
+        "html": "CS2, 발로란트, 에이펙스 레전드, 오버워치 2, 포트나이트, 소스 및 퀘이크 엔진을 공식 지원합니다."
     },
     {
         "type": "tip",
-        "title": "포트나이트 입력 방식 안내",
+        "title": "포트나이트 입력 방식",
         "html": "게임 화면에 표시된 퍼센트 수치를 그대로 입력하세요 (예: 7%인 경우 <strong>7</strong> 입력)."
     },
     {
@@ -208,7 +208,7 @@ export const content: MouseSensitivityLocaleContent = {
     },
     {
         "type": "paragraph",
-        "html": "360도 회전에 필요한 실제 마우스 이동 거리는 화면 시야각(FOV)의 영향을 받지 않습니다. 다만 시각적 속도감은 다를 수 있습니다."
+        "html": "360도 회전에 필요한 실제 마우스 이동 거리는 화면 시야각(FOV)의 영향을 받지 않습니다."
     },
     {
         "type": "title",
@@ -218,7 +218,7 @@ export const content: MouseSensitivityLocaleContent = {
     {
         "type": "list",
         "items": [
-            "마우스 가속도를 윈도우 및 마우스 소프트웨어에서 비활성화하세요.",
+            "마우스 가속도를 비활성화하세요.",
             "마우스패드 가장자리에 마우스를 정확히 맞추세요.",
             "360도 회전을 수행하여 실측 거리를 확인하세요.",
             "필요한 경우 최소 단위로 값을 미세 조정하세요."
@@ -227,12 +227,12 @@ export const content: MouseSensitivityLocaleContent = {
     {
         "type": "tip",
         "title": "실제 측정 검증 권장",
-        "html": "게임 업데이트로 인한 오차를 방지하기 위해 마우스패드에서 직접 회전 거리를 확인하세요."
+        "html": "마우스패드에서 직접 회전 거리를 확인하여 감도를 검증하세요."
     }
 ],
   faqTitle: '마우스 감도 변환 자주 묻는 질문',
   faq: faqItems,
-  bibliographyTitle: 'Sources',
+  bibliographyTitle: '출처 및 캘리브레이션 참조',
   bibliography,
   howTo: howToItems,
   schemas: [appSchema, faqSchema, howToSchema],
