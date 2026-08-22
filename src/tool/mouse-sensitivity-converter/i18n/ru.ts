@@ -111,7 +111,7 @@ export const content: MouseSensitivityLocaleContent = {
     "copyResultLabel": "Скопировать результат",
     "copiedLabel": "Скопировано",
     "swapLabel": "Обратная конвертация",
-    "swapButtonLabel": "Поменять игры местами",
+    "swapButtonLabel": "Поменять игры",
     "shareLabel": "Скопировать ссылку",
     "shareCopiedLabel": "Ссылка скопирована",
     "presetsLabel": "Пресеты мышечной памяти",
