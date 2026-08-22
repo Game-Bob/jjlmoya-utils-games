@@ -1,0 +1,9 @@
+---
+import { bibliography } from './bibliography';
+---
+
+<ul class="sensitivity-bibliography">
+  {bibliography.map((entry) => (
+    <li><a href={entry.url} target="_blank" rel="noreferrer">{entry.name}</a></li>
+  ))}
+</ul>

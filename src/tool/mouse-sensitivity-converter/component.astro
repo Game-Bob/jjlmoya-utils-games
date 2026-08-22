@@ -1,0 +1,219 @@
+---
+import { GAME_PROFILES, getGameProfile } from './logic';
+import type { MouseSensitivityUI } from './ui';
+
+interface Props {
+  ui: MouseSensitivityUI;
+}
+
+const { ui } = Astro.props;
+const sourceProfile = getGameProfile('valorant');
+const targetProfile = getGameProfile('cs2');
+---
+
+<div
+  class="sens-lab"
+  data-sensitivity-lab
+  data-linked-dpi="true"
+  data-unit="metric"
+  data-valid="true"
+  data-quality="calibrate"
+>
+  <script is:inline type="application/json" data-ui-copy set:html={JSON.stringify(ui)} />
+
+  <div class="lab-toolbar">
+    <div class="unit-toggle" role="group" aria-label={ui.physicalArcLabel}>
+      <button type="button" data-action="unit" data-unit="metric" aria-pressed="true">
+        {ui.cmUnitLabel}
+      </button>
+      <button type="button" data-action="unit" data-unit="imperial" aria-pressed="false">
+        {ui.inchUnitLabel}
+      </button>
+    </div>
+    <button class="toolbar-action" type="button" data-action="share">
+      <span class="action-mark" aria-hidden="true">↗</span>
+      <span data-action-label>{ui.shareLabel}</span>
+    </button>
+  </div>
+
+  <ol class="quick-guide">
+    <li><b>1</b><span>{ui.guideSourceText}</span></li>
+    <li><b>2</b><span>{ui.guideTargetText}</span></li>
+    <li><b>3</b><span>{ui.guideResultText}</span></li>
+  </ol>
+
+  <div class="orbit-stage" aria-hidden="true">
+    <div class="portal portal-source">
+      <span class="portal-axis axis-horizontal"></span>
+      <span class="portal-axis axis-vertical"></span>
+      <span class="portal-core"></span>
+    </div>
+    <div class="travel-line">
+      <span class="travel-progress"></span>
+      <span class="mouse-scout"><i></i></span>
+    </div>
+    <div class="portal portal-target">
+      <span class="portal-axis axis-horizontal"></span>
+      <span class="portal-axis axis-vertical"></span>
+      <span class="portal-core"></span>
+    </div>
+    <div class="orbit-readout">
+      <span>{ui.physicalArcLabel}</span>
+      <strong data-distance-primary>37.33 cm</strong>
+      <small data-distance-secondary>14.70 in</small>
+      <em data-aim-band>{ui.balancedBandLabel}</em>
+    </div>
+  </div>
+
+  <div class="calibration-deck">
+    <section class="station station-source" aria-labelledby="source-station-heading">
+      <div class="station-heading">
+        <span class="station-index">01</span>
+        <h3 id="source-station-heading">{ui.sourceStationLabel}</h3>
+      </div>
+
+      <div class="custom-select" data-game-select="source" data-open="false">
+        <span class="field-label" id="source-game-label">{ui.sourceGameLabel}</span>
+        <input type="hidden" data-field="sourceGameId" value={sourceProfile.id} />
+        <button
+          type="button"
+          class="select-trigger"
+          data-select-trigger="source"
+          aria-labelledby="source-game-label"
+          aria-haspopup="listbox"
+          aria-expanded="false"
+        >
+          <span data-select-label>{sourceProfile.name}</span>
+          <span class="chevron" aria-hidden="true"></span>
+        </button>
+        <div class="select-menu" role="listbox" aria-labelledby="source-game-label">
+          {GAME_PROFILES.map((profile) => (
+            <button
+              type="button"
+              role="option"
+              data-game-option={profile.id}
+              data-side="source"
+              aria-selected={profile.id === sourceProfile.id ? 'true' : 'false'}
+              class:list={{ 'is-active': profile.id === sourceProfile.id }}
+            >
+              <span>{profile.name}</span><small>{profile.yaw}</small>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div class="paired-inputs">
+        <label>
+          <span>{ui.sourceDpiLabel}</span>
+          <input type="number" data-field="sourceDpi" min="100" max="32000" step="50" value="800" inputmode="decimal" />
+        </label>
+        <label>
+          <span>{ui.sensitivityLabel}</span>
+          <input type="number" data-field="sourceSensitivity" min="0.001" max="100" step="0.001" value="0.35" inputmode="decimal" />
+        </label>
+      </div>
+      <p class="input-hint">{ui.sourceInputHint}</p>
+      <p class="profile-change" data-profile-change hidden>{ui.profileResetText}</p>
+      <div class="profile-meta">
+        <span>{ui.yawLabel} <b data-source-yaw>{sourceProfile.yaw}</b></span>
+        <span data-source-confidence>{ui.measuredProfileLabel}</span>
+      </div>
+    </section>
+
+    <div class="transfer-column">
+      <button type="button" class="swap-button" data-action="swap" aria-label={ui.swapLabel}>
+        <span aria-hidden="true">⇄</span>
+        <span>{ui.swapButtonLabel}</span>
+      </button>
+      <button type="button" class="link-button" data-action="link-dpi" aria-pressed="true">
+        <span class="link-node" aria-hidden="true"></span>
+        <span>{ui.linkDpiLabel}</span>
+      </button>
+    </div>
+
+    <section class="station station-target" aria-labelledby="target-station-heading">
+      <div class="station-heading">
+        <span class="station-index">02</span>
+        <h3 id="target-station-heading">{ui.targetStationLabel}</h3>
+      </div>
+
+      <div class="custom-select" data-game-select="target" data-open="false">
+        <span class="field-label" id="target-game-label">{ui.targetGameLabel}</span>
+        <input type="hidden" data-field="targetGameId" value={targetProfile.id} />
+        <button
+          type="button"
+          class="select-trigger"
+          data-select-trigger="target"
+          aria-labelledby="target-game-label"
+          aria-haspopup="listbox"
+          aria-expanded="false"
+        >
+          <span data-select-label>{targetProfile.name}</span>
+          <span class="chevron" aria-hidden="true"></span>
+        </button>
+        <div class="select-menu" role="listbox" aria-labelledby="target-game-label">
+          {GAME_PROFILES.map((profile) => (
+            <button
+              type="button"
+              role="option"
+              data-game-option={profile.id}
+              data-side="target"
+              aria-selected={profile.id === targetProfile.id ? 'true' : 'false'}
+              class:list={{ 'is-active': profile.id === targetProfile.id }}
+            >
+              <span>{profile.name}</span><small>{profile.yaw}</small>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <label class="target-dpi-field">
+        <span>{ui.targetDpiLabel}</span>
+        <input type="number" data-field="targetDpi" min="100" max="32000" step="50" value="800" inputmode="decimal" disabled />
+      </label>
+      <p class="input-hint">{ui.targetInputHint}</p>
+      <div class="result-capsule">
+        <span data-target-result-label>{ui.targetSensitivityLabel}</span>
+        <output data-target-result>1.1136</output>
+        <button type="button" data-action="copy-result" data-copy-result data-copy-value="1.1136">
+          <span data-action-label>{ui.copyResultLabel}</span>
+        </button>
+      </div>
+      <div class="profile-meta">
+        <span>{ui.yawLabel} <b data-target-yaw>{targetProfile.yaw}</b></span>
+        <span data-target-confidence>{ui.documentedProfileLabel}</span>
+      </div>
+    </section>
+  </div>
+
+  <div class="preset-strip" aria-label={ui.presetsLabel}>
+    <span>{ui.presetsLabel}</span>
+    <button type="button" data-action="preset" data-distance="22">{ui.presetFastLabel}</button>
+    <button type="button" data-action="preset" data-distance="34">{ui.presetBalancedLabel}</button>
+    <button type="button" data-action="preset" data-distance="50">{ui.presetControlLabel}</button>
+  </div>
+
+  <div class="instrument-footer">
+    <dl class="metric-ribbon">
+      <div><dt>{ui.sourceEdpiLabel}</dt><dd data-source-edpi>280</dd></div>
+      <div><dt>{ui.targetEdpiLabel}</dt><dd data-target-edpi>890.9</dd></div>
+      <div><dt>{ui.countsLabel}</dt><dd data-counts>14,694</dd></div>
+      <div><dt>{ui.matchQualityLabel}</dt><dd data-quality>{ui.calibrationLabel}</dd></div>
+    </dl>
+    <div class="formula-panel">
+      <span>{ui.formulaLabel}</span>
+      <code>{ui.formulaText}</code>
+    </div>
+    <aside class="verification-note">
+      <strong>{ui.verificationTitle}</strong>
+      <p>{ui.verificationText}</p>
+      <small>{ui.baseAimOnlyText}</small>
+    </aside>
+    <p class="invalid-message" data-invalid hidden>{ui.invalidInputText}</p>
+  </div>
+</div>
+
+<script>
+  import { initMouseSensitivityConverters } from './controller';
+  initMouseSensitivityConverters();
+</script>
