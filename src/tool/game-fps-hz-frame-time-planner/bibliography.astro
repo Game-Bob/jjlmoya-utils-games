@@ -1,15 +1,6 @@
 ---
-import { gameFpsHzFrameTimePlanner } from './index';
-import type { KnownLocale } from '../../types';
-
-interface Props {
-  locale: KnownLocale;
-}
-
-const { locale = 'es' } = Astro.props;
-const content = await gameFpsHzFrameTimePlanner.i18n[locale]?.();
+import { Bibliography as SharedBibliography } from '@jjlmoya/utils-shared';
+import { bibliography } from './bibliography';
 ---
 
-<ul class="frame-planner-sources">
-  {content?.bibliography.map((link) => <li><a href={link.url} rel="noreferrer">{link.name}</a></li>)}
-</ul>
+<SharedBibliography links={bibliography} />

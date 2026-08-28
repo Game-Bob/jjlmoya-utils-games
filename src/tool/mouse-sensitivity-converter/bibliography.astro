@@ -1,9 +1,6 @@
 ---
+import { Bibliography as SharedBibliography } from '@jjlmoya/utils-shared';
 import { bibliography } from './bibliography';
 ---
 
-<ul class="sensitivity-bibliography">
-  {bibliography.map((entry) => (
-    <li><a href={entry.url} target="_blank" rel="noreferrer">{entry.name}</a></li>
-  ))}
-</ul>
+<SharedBibliography links={bibliography} />
