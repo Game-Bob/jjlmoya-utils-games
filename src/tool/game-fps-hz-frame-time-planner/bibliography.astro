@@ -1,13 +1,15 @@
 ---
-import type { BibliographyEntry } from '../../types';
+import { gameFpsHzFrameTimePlanner } from './index';
+import type { KnownLocale } from '../../types';
 
 interface Props {
-  links: BibliographyEntry[];
+  locale: KnownLocale;
 }
 
-const { links } = Astro.props;
+const { locale = 'es' } = Astro.props;
+const content = await gameFpsHzFrameTimePlanner.i18n[locale]?.();
 ---
 
 <ul class="frame-planner-sources">
-  {links.map((link) => <li><a href={link.url} rel="noreferrer">{link.name}</a></li>)}
+  {content?.bibliography.map((link) => <li><a href={link.url} rel="noreferrer">{link.name}</a></li>)}
 </ul>

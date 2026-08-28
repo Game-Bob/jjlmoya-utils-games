@@ -1,15 +1,14 @@
 ---
 import { SEORenderer } from '@jjlmoya/utils-shared';
-import type { UtilitySEOContent } from '@jjlmoya/utils-shared';
-import type { KnownLocale, SEOSection } from '../../types';
+import { gameFpsHzFrameTimePlanner } from './index';
+import type { KnownLocale } from '../../types';
 
 interface Props {
   locale: KnownLocale;
-  sections: SEOSection[];
 }
 
-const { locale, sections } = Astro.props;
-const content: UtilitySEOContent = { locale, sections };
+const { locale = 'es' } = Astro.props;
+const content = await gameFpsHzFrameTimePlanner.i18n[locale]?.();
 ---
 
-<SEORenderer content={content} />
+<SEORenderer content={{ locale, sections: content?.seo ?? [] }} />
