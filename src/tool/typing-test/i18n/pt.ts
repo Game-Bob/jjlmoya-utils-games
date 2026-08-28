@@ -1,5 +1,5 @@
 import { bibliography } from '../bibliography';
-import type { GamesToolLocaleContent as GamesToolLocaleContentType } from '../../../index';
+import type { TypingTestLocaleContent as TypingTestLocaleContentType } from '../entry';
 
 const slug = 'teste-velocidade-digitacao';
 const title = 'Teste de Velocidade de Digitação: Meça sua Rapidez ao Escrever';
@@ -53,7 +53,7 @@ const appSchema = {
   offers: { '@type': 'Offer' as const, price: '0', priceCurrency: 'EUR' },
 };
 
-export const content: GamesToolLocaleContentType = {
+export const content: TypingTestLocaleContentType = {
   slug,
   title,
   description,

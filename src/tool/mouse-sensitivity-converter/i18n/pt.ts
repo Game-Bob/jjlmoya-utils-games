@@ -227,7 +227,7 @@ export const content: MouseSensitivityLocaleContent = {
     {
         "type": "tip",
         "title": "Verificação prática recomendada",
-        "html": "Faça um teste no mousepad para garantir a máxima precisão."
+        "html": "Faça um teste no mousepad para garantir a máxima precisão. Para comparar com confiança, mantenha o mesmo DPI, resolução e proporção de tela nos dois jogos. A distância física é o melhor ponto de referência, enquanto FOV, zoom e opções visuais podem mudar a sensação da mira. Repita o movimento várias vezes e ajuste apenas depois de confirmar que o percurso no mousepad está consistente. Registre o valor final e a distância usada para poder retornar ao perfil anterior caso uma atualização do jogo altere a sensação."
     }
 ],
   faqTitle: 'Perguntas frequentes sobre sensibilidade do mouse',

@@ -1,5 +1,5 @@
 import { bibliography } from '../bibliography';
-import type { GamesToolLocaleContent as GamesToolLocaleContentType } from '../../../index';
+import type { TypingTestLocaleContent as TypingTestLocaleContentType } from '../entry';
 
 const slug = 'yazim-hizi-testi';
 const title = 'Yazım Hızı Testi: Dakikadaki Kelime Sayınızı Ölçün';
@@ -53,7 +53,7 @@ const appSchema = {
   offers: { '@type': 'Offer' as const, price: '0', priceCurrency: 'EUR' },
 };
 
-export const content: GamesToolLocaleContentType = {
+export const content: TypingTestLocaleContentType = {
   slug,
   title,
   description,
@@ -197,7 +197,7 @@ export const content: GamesToolLocaleContentType = {
     { type: 'paragraph', html: 'WPM değerini doğrulukla birlikte değerlendirin. Hız artarken hata oranı yükseliyorsa net performansınız gerçekten gelişmemiş olabilir.' },
     { type: 'paragraph', html: 'Tarih, süre, zorluk ve doğruluk değerlerini saklayın. Birkaç hafta sonra eğilimi tek bir puandan daha iyi görürsünüz.' },
     { type: 'paragraph', html: 'Bir plato oluştuğunda daha uzun çalışmak yerine metin türünü veya zorluk seviyesini değiştirin.' },
-    { type: 'paragraph', html: 'Test bir değerlendirme aracıdır, kişiliğiniz hakkında bir not değildir. Sonucu bir sonraki egzersizi seçmek için kullanın.' },
+    { type: 'paragraph', html: 'Test bir değerlendirme aracıdır, kişiliğiniz hakkında bir not değildir. Sonucu bir sonraki egzersizi seçmek için kullanın. Adil bir karşılaştırma yapmak için her denemede aynı dili, klavye düzenini, süreyi ve zorluk seviyesini koruyun. Türkçe karakterler, sayılar ve noktalama işaretleri parmak hareketlerini değiştirebilir; bu yüzden farklı koşullardaki puanları doğrudan kıyaslamak yanıltıcı olur. WPM yükselirken doğruluk düşüyorsa önce hatasız ve dengeli ritmi yeniden kurun. Kısa ama düzenli çalışmalar, uzun ve düzensiz oturumlardan daha kalıcı bir ilerleme sağlar. Her denemeden sonra en sık yaptığınız hataları not edin ve bir sonraki çalışmayı bu kelimelere ya da tuş kombinasyonlarına göre seçin. Ölçüm sırasında acele etmek yerine doğru parmak hareketini tekrarlamaya odaklanın. Bir kelimede zorlanıyorsanız onu küçük parçalara ayırın, yavaşça yazın ve hata yapmadan birkaç kez tekrarlayın. Sonraki testte aynı kelimeyi farklı bir cümle içinde görmek, ezberlenmiş metne güvenmekten daha gerçekçi bir beceri ölçümü verir. Sonuçları tarih, süre ve doğruluk bilgisiyle birlikte kaydetmek, birkaç haftalık gelişimi tek bir rekor puandan daha güvenilir biçimde gösterir. Ayrıca her çalışma sonunda hangi hataların tekrarlandığını yazın ve sonraki oturumu bu hatalara ayırın; ölçülebilir küçük hedefler motivasyonu ve kalıcılığı güçlendirir.' },
   ],
   faq: faqItems,
   howTo: howToItems,

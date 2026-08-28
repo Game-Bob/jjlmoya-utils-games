@@ -227,7 +227,7 @@ export const content: MouseSensitivityLocaleContent = {
     {
         "type": "tip",
         "title": "Zalecany test praktyczny",
-        "html": "Zrób pomiar na podkładce dla uzyskania idealnej celności."
+        "html": "Zrób pomiar na podkładce dla uzyskania idealnej celności. Dla wiarygodnego porównania użyj tych samych wartości DPI, rozdzielczości i proporcji obrazu w obu grach. Odległość fizyczna jest najlepszym punktem odniesienia, natomiast FOV, powiększenie i ustawienia obrazu mogą zmienić odczucie celowania. Powtórz pełny obrót kilka razy i sprawdź, czy punkt końcowy wraca w to samo miejsce. Jeśli wyniki mocno się różnią, najpierw skontroluj akcelerację myszy, sterownik, częstotliwość odpytywania oraz faktyczne DPI urządzenia. Zapisz ustawienia razem z wynikiem, aby móc odtworzyć profil po zmianie gry lub sprzętu. Taki zapis ułatwia także ocenę zmian po aktualizacji gry. Sprawdzaj profil po każdej większej aktualizacji."
     }
 ],
   faqTitle: 'Często zadawane pytania dotyczące czułości myszy',

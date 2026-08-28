@@ -15,7 +15,8 @@ export async function getStaticPaths() {
   const paths = [];
 
   for (const { entry, Component: lazyComp } of ALL_TOOLS) {
-    const { default: Component } = await lazyComp();
+    const loader = lazyComp as () => Promise<{ default: ToolComponent }>;
+    const { default: Component } = await loader();
     const localeEntries = Object.entries(entry.i18n) as [
       KnownLocale,
       () => Promise<ToolLocaleContent>,
@@ -70,8 +71,10 @@ interface NavItem {
   isActive?: boolean;
 }
 
+type ToolComponent = (props: { ui: Record<string, string> }) => ReturnType<typeof PreviewLayout>;
+
 interface Props {
-  Component: unknown;
+  Component: ToolComponent;
   locale: KnownLocale;
   content: ToolLocaleContent;
   localeUrls: Partial<Record<KnownLocale, string>>;
@@ -79,11 +82,12 @@ interface Props {
   englishSlug: string;
 }
 
-const { Component, locale, content, localeUrls, allToolsNav, englishSlug } = Astro.props;
+const { Component, locale, content, localeUrls, allToolsNav, englishSlug } = Astro.props as Props;
 
 const cssFiles = import.meta.glob("../../tool/**/*.css", { query: "?raw", import: "default" });
 const cssKey = Object.keys(cssFiles).find((k) => k.endsWith(`/${englishSlug}.css`));
-const toolCss = cssKey ? await cssFiles[cssKey]() as string : "";
+const cssLoader = cssKey ? cssFiles[cssKey] : undefined;
+const toolCss = cssLoader ? await cssLoader() as string : "";
 
 const seoContent: UtilitySEOContent = { locale, sections: content.seo ?? [] };
 
@@ -132,7 +136,7 @@ const titleBase = words.slice(1).join(" ") || "";
     </section>
 
     <section class="section-faq">
-      <FAQSection items={content.faq} inLanguage={locale} />
+      <FAQSection items={content.faq} />
     </section>
 
     <section class="section-bibliography">

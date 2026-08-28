@@ -1,10 +1,11 @@
 import type { GamesCategoryEntry } from '../types';
 import { typingTest } from '../tool/typing-test/entry';
 import { mouseSensitivityConverter } from '../tool/mouse-sensitivity-converter/entry';
+import { gameFpsHzFrameTimePlanner } from '../tool/game-fps-hz-frame-time-planner/entry';
 
 export const gamesCategory: GamesCategoryEntry = {
   icon: 'mdi:gamepad-variant',
-  tools: [typingTest, mouseSensitivityConverter],
+  tools: [typingTest, mouseSensitivityConverter, gameFpsHzFrameTimePlanner],
   i18n: {
     es: () => import('./i18n/es').then((m) => m.content),
     en: () => import('./i18n/en').then((m) => m.content),

@@ -227,7 +227,7 @@ export const content: MouseSensitivityLocaleContent = {
     {
         "type": "tip",
         "title": "Verifica pratica consigliata",
-        "html": "Fai una prova sul tappetino per garantire la massima precisione."
+        "html": "Fai una prova sul tappetino per garantire la massima precisione. Per un confronto affidabile usa lo stesso DPI, la stessa risoluzione e lo stesso rapporto d aspetto durante la verifica. La distanza fisica resta il riferimento più solido, mentre FOV, zoom e impostazioni visive possono cambiare la percezione."
     }
 ],
   faqTitle: 'Domande frequenti sulla sensibilità del mouse',

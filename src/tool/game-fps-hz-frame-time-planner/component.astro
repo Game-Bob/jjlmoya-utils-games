@@ -1,0 +1,118 @@
+---
+import type { GameFrameTimeUI } from './ui';
+
+interface Props {
+  ui: GameFrameTimeUI;
+}
+
+const { ui } = Astro.props;
+---
+
+<div class="frame-planner" data-frame-planner>
+  <script is:inline type="application/json" id="frame-planner-copy" set:html={JSON.stringify(ui)}></script>
+  <div class="frame-planner-surface">
+    <div class="frame-planner-onboarding">
+      <span class="frame-planner-kicker">{ui.workflowLabel}</span>
+      <p>{ui.workflowText}</p>
+    </div>
+
+    <div class="frame-planner-controls">
+      <section class="input-cluster" aria-labelledby="frame-signal-title">
+        <div class="cluster-heading">
+          <span class="cluster-index">01</span>
+          <h2 id="frame-signal-title">{ui.signalSectionLabel}</h2>
+        </div>
+        <div class="number-grid number-grid-three">
+          <label class="field">
+            <span>{ui.fpsMinLabel}</span>
+            <span class="input-wrap"><input data-field="fpsMin" type="number" min="1" max="1000" step="1" value="72" inputmode="numeric" /></span>
+            <small>FPS</small>
+          </label>
+          <label class="field field-featured">
+            <span>{ui.fpsTypicalLabel}</span>
+            <span class="input-wrap"><input data-field="fpsTypical" type="number" min="1" max="1000" step="1" value="100" inputmode="numeric" /></span>
+            <small>FPS</small>
+          </label>
+          <label class="field">
+            <span>{ui.fpsMaxLabel}</span>
+            <span class="input-wrap"><input data-field="fpsMax" type="number" min="1" max="1000" step="1" value="118" inputmode="numeric" /></span>
+            <small>FPS</small>
+          </label>
+        </div>
+        <p class="field-hint">{ui.fpsHint}</p>
+      </section>
+
+      <section class="input-cluster" aria-labelledby="display-timing-title">
+        <div class="cluster-heading">
+          <span class="cluster-index">02</span>
+          <h2 id="display-timing-title">{ui.displaySectionLabel}</h2>
+        </div>
+        <div class="number-grid number-grid-display">
+          <label class="field field-featured">
+            <span>{ui.refreshLabel}</span>
+            <span class="input-wrap"><input data-field="refreshHz" type="number" min="1" max="1000" step="1" value="144" inputmode="numeric" /></span>
+            <small>Hz</small>
+          </label>
+          <div class="toggle-stack">
+            <label class="toggle-line"><input data-field="vrrEnabled" type="checkbox" checked /><span class="toggle-mark" aria-hidden="true"></span><span><strong>{ui.vrrLabel}</strong><small>{ui.vrrHint}</small></span></label>
+            <label class="toggle-line"><input data-field="vsyncEnabled" type="checkbox" checked /><span class="toggle-mark" aria-hidden="true"></span><span><strong>{ui.vsyncLabel}</strong></span></label>
+          </div>
+        </div>
+        <div class="number-grid number-grid-vrr" data-vrr-fields>
+          <label class="field field-compact"><span>{ui.vrrMinLabel}</span><span class="input-wrap"><input data-field="vrrMinHz" type="number" min="1" max="1000" step="1" value="48" inputmode="numeric" /></span><small>Hz</small></label>
+          <label class="field field-compact"><span>{ui.vrrMaxLabel}</span><span class="input-wrap"><input data-field="vrrMaxHz" type="number" min="1" max="1000" step="1" value="144" inputmode="numeric" /></span><small>Hz</small></label>
+        </div>
+        <div class="preset-strip" aria-label={ui.presetsLabel}>
+          <span>{ui.presetsLabel}</span>
+          <div class="preset-buttons">
+            <button type="button" data-preset="60" aria-pressed="false">{ui.preset60Label}</button>
+            <button type="button" data-preset="120" aria-pressed="false">{ui.preset120Label}</button>
+            <button type="button" data-preset="144" aria-pressed="true">{ui.preset144Label}</button>
+            <button type="button" data-preset="240" aria-pressed="false">{ui.preset240Label}</button>
+          </div>
+        </div>
+        <p class="field-hint">{ui.refreshHint}</p>
+      </section>
+    </div>
+
+    <section class="cadence-scene" aria-labelledby="cadence-scene-title">
+      <div class="scene-heading"><div><span class="frame-planner-kicker">03</span><h2 id="cadence-scene-title">{ui.sceneLabel}</h2></div><span class="scene-unit">MS / FRAME</span></div>
+      <div class="timeline" data-timeline>
+        <div class="timeline-fallback" aria-hidden="true"><span></span><span></span><span></span></div>
+      </div>
+    </section>
+
+    <section class="interpretation" data-interpretation aria-live="polite" aria-labelledby="interpretation-title">
+      <div class="interpretation-heading"><span class="frame-planner-kicker">04</span><h2 id="interpretation-title">{ui.interpretationLabel}</h2></div>
+      <div class="interpretation-signal"><span class="signal-dot"></span><span>{ui.resultGoodLabel}</span></div>
+      <p class="interpretation-headline">{ui.resultGoodText}</p>
+      <div class="interpretation-facts"><span>{ui.frameFitsLabel}</span><span>{ui.insideVrrLabel}</span></div>
+    </section>
+
+    <div class="metrics" data-metrics>
+      <div class="metric"><span>{ui.typicalFpsLabel}</span><strong>100 FPS</strong></div>
+      <div class="metric"><span>{ui.frameTimeLabel}</span><strong>10.00 ms</strong></div>
+      <div class="metric"><span>{ui.refreshBudgetLabel}</span><strong>6.94 ms</strong></div>
+      <div class="metric"><span>{ui.monitorLabel}</span><strong>144 Hz</strong></div>
+      <div class="metric"><span>{ui.vrRangeLabel}</span><strong>48-144 Hz</strong></div>
+      <div class="metric"><span>{ui.syncModeLabel}</span><strong>{ui.vrrOnText} + {ui.vsyncOnText}</strong></div>
+    </div>
+
+    <div class="reading-table" data-table>
+      <table>
+        <thead><tr><th scope="col">{ui.tableFpsLabel}</th><th scope="col">{ui.tableFrameTimeLabel}</th><th scope="col">{ui.tableStatusLabel}</th></tr></thead>
+        <tbody><tr><th scope="row">72 FPS</th><td>13.89 ms</td><td>{ui.insideVrrStatus}</td></tr><tr><th scope="row">100 FPS</th><td>10.00 ms</td><td>{ui.insideVrrStatus}</td></tr><tr><th scope="row">118 FPS</th><td>8.47 ms</td><td>{ui.insideVrrStatus}</td></tr></tbody>
+      </table>
+    </div>
+
+    <aside class="frame-planner-note"><span>{ui.noteLabel}</span><p data-note>{ui.noteText}</p></aside>
+  </div>
+</div>
+
+<script>
+  import { initFramePlanner } from './controller';
+
+  const root = document.querySelector<HTMLElement>('[data-frame-planner]');
+  const copy = document.querySelector<HTMLScriptElement>('#frame-planner-copy');
+  if (root && copy?.textContent) initFramePlanner(root, JSON.parse(copy.textContent));
+</script>

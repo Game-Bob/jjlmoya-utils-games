@@ -1,5 +1,5 @@
 import { bibliography } from '../bibliography';
-import type { GamesToolLocaleContent as GamesToolLocaleContentType } from '../../../index';
+import type { TypingTestLocaleContent as TypingTestLocaleContentType } from '../entry';
 
 const slug = 'typtest-svensk';
 const title = 'Typtest: Mät din Skrivhastighet';
@@ -53,7 +53,7 @@ const appSchema = {
   offers: { '@type': 'Offer' as const, price: '0', priceCurrency: 'EUR' },
 };
 
-export const content: GamesToolLocaleContentType = {
+export const content: TypingTestLocaleContentType = {
   slug,
   title,
   description,
@@ -210,7 +210,7 @@ export const content: GamesToolLocaleContentType = {
     { type: 'paragraph', html: 'Låt fingrarna återgå till grundpositionen efter varje rörelse. Det minskar onödiga förflyttningar och gör nästa tangent lättare att hitta.' },
     { type: 'paragraph', html: 'Öva i den layout och på det språk du faktiskt använder. En hög poäng i en ovan miljö säger mindre om din vardagliga effektivitet.' },
     { type: 'paragraph', html: 'Ta en paus mellan mätningar så att resultatet inte påverkas av trötta händer. Kvalitet är viktigare än många repetitioner.' },
-    { type: 'paragraph', html: 'Spara datum och precision tillsammans med WPM. På så sätt ser du om förbättringen håller över tid.' },
+    { type: 'paragraph', html: 'Spara datum och precision tillsammans med WPM. På så sätt ser du om förbättringen håller över tid. För en rättvis jämförelse bör du använda samma språk, tangentbordslayout och testlängd varje gång. Svenska tecken, siffror och skiljetecken kan förändra rytmen, så jämför främst resultat från likadana testförhållanden. Använd resultatet som återkoppling, inte som ett absolut betyg. Om WPM ökar samtidigt som noggrannheten faller behöver du sänka tempot och bygga upp en jämnare teknik innan du försöker slå nästa rekord. Ett enkelt träningsupplägg är att börja med fem minuter lugn precision, fortsätta med ett normalt test och avsluta med en kort intervall där du fokuserar på rytm. Den ordningen gör framstegen lättare att hålla över tid. Följ också hur noggrannheten utvecklas mellan passen, eftersom en jämn förbättring säger mer än ett enstaka toppresultat.' },
   ],
   faq: faqItems,
   howTo: howToItems,

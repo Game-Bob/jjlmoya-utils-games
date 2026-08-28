@@ -227,7 +227,7 @@ export const content: MouseSensitivityLocaleContent = {
     {
         "type": "tip",
         "title": "Praktische controle aanbevolen",
-        "html": "Doe een test op je muismat voor maximale nauwkeurigheid."
+        "html": "Doe een test op je muismat voor maximale nauwkeurigheid. Gebruik voor een eerlijke vergelijking dezelfde DPI, resolutie en beeldverhouding in beide games. De fysieke afstand blijft de beste referentie, terwijl FOV, zoom en grafische instellingen het gevoel van de gevoeligheid kunnen veranderen. Herhaal de volledige draai meerdere keren en controleer of het beginpunt en eindpunt overeenkomen. Controleer bij grote verschillen eerst muisversnelling, driverinstellingen en de werkelijk ingestelde DPI voordat je de omgerekende waarde aanpast. Noteer de gebruikte instellingen, zodat je later precies dezelfde omstandigheden kunt herstellen. Zo blijft de converter nuttig als controlelijst en niet alleen als een eenmalige berekening."
     }
 ],
   faqTitle: 'Veelgestelde vragen over muisgevoeligheid',

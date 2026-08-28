@@ -227,7 +227,7 @@ export const content: MouseSensitivityLocaleContent = {
     {
         "type": "tip",
         "title": "Tes fisik disarankan",
-        "html": "Lakukan pengujian langsung di mousepad Anda."
+        "html": "Lakukan pengujian langsung di mousepad Anda. Untuk perbandingan yang dapat dipercaya, gunakan DPI, resolusi, dan rasio aspek yang sama di kedua game. Jarak fisik adalah acuan utama, sedangkan FOV, zoom, dan pengaturan visual dapat mengubah rasa bidikan. Ulangi gerakan 360 derajat beberapa kali sampai jalurnya konsisten, lalu catat nilai akhir dan jarak mousepad agar profil lama mudah dipulihkan jika pembaruan game mengubah respons kamera. Jangan menilai hasil hanya dari angka sensitivitas di menu. Periksa apakah titik awal dan titik akhir gerakan berada pada posisi yang sama, lalu ulangi percobaan setelah beberapa menit. Jika hasilnya berubah jauh, periksa akselerasi mouse, polling rate, mode tampilan, serta apakah DPI perangkat benar-benar sesuai dengan nilai yang dimasukkan. Catatan ini membuat konversi lebih mudah dilacak ketika Anda mengganti game, perangkat, atau pengaturan sistem."
     }
 ],
   faqTitle: 'Pertanyaan umum tentang sensitivitas mouse',

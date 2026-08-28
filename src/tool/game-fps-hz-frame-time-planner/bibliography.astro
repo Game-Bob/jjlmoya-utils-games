@@ -1,0 +1,13 @@
+---
+import type { BibliographyEntry } from '../../types';
+
+interface Props {
+  links: BibliographyEntry[];
+}
+
+const { links } = Astro.props;
+---
+
+<ul class="frame-planner-sources">
+  {links.map((link) => <li><a href={link.url} rel="noreferrer">{link.name}</a></li>)}
+</ul>

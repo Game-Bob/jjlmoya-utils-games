@@ -227,7 +227,7 @@ export const content: MouseSensitivityLocaleContent = {
     {
         "type": "tip",
         "title": "Pratik kontrol önerilir",
-        "html": "Mükemmel nişan alma için mousepad üzerinde test yapın."
+        "html": "Mükemmel nişan alma için mousepad üzerinde test yapın. Güvenilir bir karşılaştırma için iki oyunda aynı DPI, çözünürlük ve ekran oranını kullanın. Fiziksel mesafe en sağlam referanstır; FOV, yakınlaştırma ve görüntü ayarları nişan hissini değiştirebilir. Tam 360 derece hareketi birkaç kez tekrarlayıp başlangıç ve bitiş noktalarının aynı yere geldiğini kontrol edin. Sonuçlar değişiyorsa önce fare ivmesini, sürücü ayarlarını, yoklama hızını ve farenin gerçek DPI değerini kontrol edin. Ayarları sonuçla birlikte kaydedin; böylece oyun veya donanım değiştirdikten sonra profili yeniden kurabilirsiniz. Büyük bir oyun güncellemesinden sonra dönüş mesafesini tekrar ölçmek, menüdeki sayıya güvenmekten daha doğru olur. Bu kontrolü farklı yüzeylerde de tekrarlamak profilin tutarlılığını gösterir. Sonuçları düzenli aralıklarla yeniden doğrulayın."
     }
 ],
   faqTitle: 'Fare hassasiyeti hakkında sıkça sorulan sorular',

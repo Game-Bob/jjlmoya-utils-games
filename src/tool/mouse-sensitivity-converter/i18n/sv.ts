@@ -227,7 +227,7 @@ export const content: MouseSensitivityLocaleContent = {
     {
         "type": "tip",
         "title": "Praktisk kontroll rekommenderas",
-        "html": "Testa på musmattan för att säkerställa perfekt precision."
+        "html": "Testa på musmattan för att säkerställa perfekt precision. Använd samma DPI, upplösning och bildförhållande i båda spelen när du jämför. Det fysiska avståndet är den tydligaste referensen, medan FOV, zoom och bildinställningar kan förändra hur känsligheten upplevs. Upprepa en hel 360-gradersrörelse flera gånger och kontrollera att slutpunkten hamnar på samma plats. Om resultatet varierar mycket bör du först kontrollera musacceleration, drivrutin, pollingfrekvens och musens faktiska DPI. Spara slutprofilen tillsammans med förutsättningarna så att du kan återställa den efter ett spelbyte eller en uppdatering. På så sätt blir omvandlingen en kontrollerbar mätning och inte bara ett värde från en meny. Dokumentera också vilken musmatta du använde, eftersom olika ytor kan påverka stopp och känsla. Kontrollera profilen igen efter större uppdateringar."
     }
 ],
   faqTitle: 'Vanliga frågor om mössensitivitet',

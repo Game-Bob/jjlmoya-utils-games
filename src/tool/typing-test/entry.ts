@@ -1,6 +1,7 @@
 import type { GamesToolEntry, ToolLocaleContent } from '../../types';
 
 export interface TypingTestUI {
+  [key: string]: string;
   words: string;
   wpm: string;
   accuracy: string;

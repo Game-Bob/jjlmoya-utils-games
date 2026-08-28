@@ -1,0 +1,15 @@
+---
+import { SEORenderer } from '@jjlmoya/utils-shared';
+import type { UtilitySEOContent } from '@jjlmoya/utils-shared';
+import type { KnownLocale, SEOSection } from '../../types';
+
+interface Props {
+  locale: KnownLocale;
+  sections: SEOSection[];
+}
+
+const { locale, sections } = Astro.props;
+const content: UtilitySEOContent = { locale, sections };
+---
+
+<SEORenderer content={content} />

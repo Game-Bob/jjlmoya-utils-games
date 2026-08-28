@@ -6,5 +6,6 @@ export type { MouseSensitivityUI } from './tool/mouse-sensitivity-converter/ui';
 export { gamesCategory } from './category';
 import { typingTest } from './tool/typing-test/entry';
 import { mouseSensitivityConverter } from './tool/mouse-sensitivity-converter/entry';
+import { gameFpsHzFrameTimePlanner } from './tool/game-fps-hz-frame-time-planner/entry';
 
-export const ALL_ENTRIES = [typingTest, mouseSensitivityConverter];
+export const ALL_ENTRIES = [typingTest, mouseSensitivityConverter, gameFpsHzFrameTimePlanner];
