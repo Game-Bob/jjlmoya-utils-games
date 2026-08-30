@@ -1,7 +1,7 @@
 import type { CategoryLocaleContent } from '../../types';
 
 const slug = 'spel';
-const title = 'Virala Utmaningar och Spel: Typtest och Beroendeframkallande Hastighetstester';
+const title = 'Virala spel och hastighetsutmaningar';
 const description = 'Spelifierade utmaningar och virala spel för att testa dina färdigheter. Typtester, hastighetsutmaningar och beroendeframkallande spel 100% offline.';
 
 export const content: CategoryLocaleContent = {

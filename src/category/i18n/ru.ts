@@ -1,7 +1,7 @@
 import type { CategoryLocaleContent } from '../../types';
 
 const slug = 'igry';
-const title = 'Вирусные Челленджи и Игры: Тест Скорости Печати и Захватывающие Испытания';
+const title = 'Вирусные игры и испытания скорости';
 const description = 'Геймифицированные испытания и вирусные игры для проверки ваших навыков. Тесты скорости печати, челленджи скорости и захватывающие игры 100% офлайн.';
 
 export const content: CategoryLocaleContent = {

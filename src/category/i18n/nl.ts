@@ -1,7 +1,7 @@
 import type { CategoryLocaleContent } from '../../types';
 
 const slug = 'games';
-const title = 'Virale Uitdagingen en Games: Typtest en Verslavende Snelheidsuitdagingen';
+const title = 'Virale games en snelheidstests';
 const description = 'Gegamificeerde uitdagingen en virale games om je vaardigheden te testen. Typtesten, snelheidsuitdagingen en verslavende games 100% offline.';
 
 export const content: CategoryLocaleContent = {

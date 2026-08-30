@@ -1,7 +1,7 @@
 import type { CategoryLocaleContent } from '../../types';
 
 const slug = 'spiele';
-const title = 'Virale Herausforderungen und Spiele: Tipptest und Geschwindigkeit Challenges';
+const title = 'Virale Spiele und Geschwindigkeits Challenges';
 const description = 'Spielerische Herausforderungen und virale Spiele, um Ihre Fähigkeiten zu testen. Tipptests, Geschwindigkeits-Challenges und fesselnde Spiele 100% offline.';
 
 export const content: CategoryLocaleContent = {

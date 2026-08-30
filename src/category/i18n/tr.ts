@@ -1,7 +1,7 @@
 import type { CategoryLocaleContent } from '../../types';
 
 const slug = 'oyunlar';
-const title = 'Viral Meydan Okumalar ve Oyunlar: Yazım Testi ve Bağımlılık Yapan Hız Yarışları';
+const title = 'Viral oyunlar ve hız testleri';
 const description = 'Becerilerinizi test etmek için oyunlaştırılmış meydan okumalar ve viral oyunlar. %100 çevrimdışı yazım testleri, hız meydan okumaları ve sürükleyici oyunlar.';
 
 export const content: CategoryLocaleContent = {
