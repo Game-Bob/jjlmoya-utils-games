@@ -1,245 +1,245 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-04T11:01:26.515Z",
+  "generatedAt": "2026-09-04T19:09:19.405Z",
   "pages": {
     "https://www.gamebob.dev/de/werkzeuge/kategorien/spiele/": {
-      "hash": "e1f8f876e167029b08b6452128b710d4e05363ca8a07a9ce222f11e33cbc3cd0",
+      "hash": "6e0ae4c455696c9013784d4c78faf586075256b79b3776a749d13cb64314632c",
       "route": "/de/werkzeuge/kategorien/spiele/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/spiele/maussensitivitaet-umrechnen-spiele/": {
-      "hash": "224452c26feaaad624ee354ccb662cf51e53f3eda988a018c31957af4eef38cb",
+      "hash": "894ff35f522f94d07b877855f94ba204bf0ef4360cf2e9f1fc301e9472740d60",
       "route": "/de/werkzeuge/kategorien/spiele/maussensitivitaet-umrechnen-spiele/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/spiele/spiel-fps-hz-framezeit-planer/": {
-      "hash": "ca3596fe0843e0d602c6e37b8550505bd403456e98d46f39de98bd1acda34712",
+      "hash": "8652a3e3070147a49046ddf8f6aeafc6b9904a6006cd09ef42ccb409c0dfd278",
       "route": "/de/werkzeuge/kategorien/spiele/spiel-fps-hz-framezeit-planer/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/spiele/tippgeschwindigkeit-test/": {
-      "hash": "96a5255a98de27d4691da0f569a03c033ad4576aafb9a6c699b6c9ede36fe90f",
+      "hash": "8b496ef218810a6bf91392d9a0580b8f740885774fbcc54d6d3f7a18ddb5c941",
       "route": "/de/werkzeuge/kategorien/spiele/tippgeschwindigkeit-test/"
     },
     "https://www.gamebob.dev/en/utilities/categories/games/game-fps-hz-frame-time-planner/": {
-      "hash": "657f9112c325dea4cf6fdff4f558c957cd51a9adf9065ec209dbfa18f4036f0b",
+      "hash": "e1aad1292cadff4ce6086362da5a37df6331efb1a82296a88135d0499ea8c39d",
       "route": "/en/utilities/categories/games/game-fps-hz-frame-time-planner/"
     },
     "https://www.gamebob.dev/en/utilities/categories/games/": {
-      "hash": "eb87b38e94d4a9c7c38ac8d9c1f34c9a25d94ac20d49063d15eeed51deea014c",
+      "hash": "e68020c8d9fe797ea78ce9eae2dff8559f4be8c3d9dd545a89b15003d4c3c429",
       "route": "/en/utilities/categories/games/"
     },
     "https://www.gamebob.dev/en/utilities/categories/games/mouse-sensitivity-converter-between-games/": {
-      "hash": "d42db0f6c76da6707b20b1da60324e9f83f96805210ba1ad412f6386352367f2",
+      "hash": "5224bc7cfcd36a7da090e1ee4253b19c0c534bc65fad418fa8554bf64ffaf4fe",
       "route": "/en/utilities/categories/games/mouse-sensitivity-converter-between-games/"
     },
     "https://www.gamebob.dev/en/utilities/categories/games/typing-speed-test/": {
-      "hash": "4a0c73978ac31d99af275b6e769e867d397b30bb724d33b1eefecb276bd00a50",
+      "hash": "814e08ee919c9057d7953a56d234823b7ba087e9565ff3d10359f47477f3bc6b",
       "route": "/en/utilities/categories/games/typing-speed-test/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/jeux/convertisseur-sensibilite-souris-jeux/": {
-      "hash": "c36263bbda668f1994cca20fce6f200c998b72451737595cbe00d37b57a86cba",
+      "hash": "0f4ab37facf8e27a370fc6f0efce2da112579d80fd8dd9c28e5aa174c5b617dd",
       "route": "/fr/utilitaires/categories/jeux/convertisseur-sensibilite-souris-jeux/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/jeux/": {
-      "hash": "6d7cf205bb5a63320f3b5793e6eda8c69ac69a5174927c372641e00e6d166e80",
+      "hash": "e0da5172d43946c471e71ad1f8b0ef9f7be3c3429ad751d9a7388fa4dd0c50cf",
       "route": "/fr/utilitaires/categories/jeux/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/jeux/planificateur-fps-hz-temps-image-jeux/": {
-      "hash": "2cd25b860091626b832713f40fb14a4013551dbac022529d2b1a22d249e70023",
+      "hash": "a456562ea623c071464b6cfd4387ade889c4295ef513e654194784f2f38dd21c",
       "route": "/fr/utilitaires/categories/jeux/planificateur-fps-hz-temps-image-jeux/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/jeux/test-vitesse-dactylographie/": {
-      "hash": "4864b39a203cf617da1bdebba29f33c2faf1c31b8ea830847b2c9302d9a1430b",
+      "hash": "091b0b471f365a7d56488cb9d72c42d7e8f9eccdf486597f41e89c0c81264ac9",
       "route": "/fr/utilitaires/categories/jeux/test-vitesse-dactylographie/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/permainan/": {
-      "hash": "6d9d2771e8aca9976c8585cc6efec2e7a6b604ac0a4cff774a5373543ad19b2c",
+      "hash": "af5f8755124f10a55a512bb2f4ee9cb8efb36f8d551e3161c5b104030d309f7c",
       "route": "/id/utilitas/kategori/permainan/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/permainan/konverter-sensitivitas-mouse-game/": {
-      "hash": "04f0ee7b7fbf94c8e0a4a20169581c374b37dedfc954281bfd0a36e3c6296169",
+      "hash": "2e975aaa2dcc65bfc257d45aea159b5cc139d9eb6f02862383e7d1d22bc244da",
       "route": "/id/utilitas/kategori/permainan/konverter-sensitivitas-mouse-game/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/permainan/perencana-waktu-frame-fps-hz-game/": {
-      "hash": "0a867236a9e71561fa57451c6dc10d2a7f941350effb23f3a72d15cfcb2cc4b1",
+      "hash": "378d5c89c49ea8931da9ed9d89ddd35bf257349dfd63da9053b809d35b42b5c0",
       "route": "/id/utilitas/kategori/permainan/perencana-waktu-frame-fps-hz-game/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/permainan/tes-kecepatan-mengetik/": {
-      "hash": "a46d39653eb10df77d74402990668b8c3d84925223af322a105b7dbd9e6dae62",
+      "hash": "2d464351ca567dae33883b99f48bd9e0859b4e0cbfcf411f5499a2650e6c7c0b",
       "route": "/id/utilitas/kategori/permainan/tes-kecepatan-mengetik/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/giochi/convertitore-sensibilita-mouse-giochi/": {
-      "hash": "2a1f6261614d282cd49414ab30f453ea3937bd462c17b0299faeb8f896dbe4e3",
+      "hash": "d4c4033190fb25e0d95311c7a7bc6c1076073ca50ac7a3fd86546bf72477628c",
       "route": "/it/utilita/categorie/giochi/convertitore-sensibilita-mouse-giochi/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/giochi/": {
-      "hash": "577bdf9db691d0a6a03d73da324e5b599145d07306aeba2c07856e18a1ab8769",
+      "hash": "f95206bc3cb5897feedcdd292dd7470d6094cc55e82ad44b4e3bbcd36cccd103",
       "route": "/it/utilita/categorie/giochi/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/giochi/pianificatore-tempo-frame-fps-hz-giochi/": {
-      "hash": "220267ac00e51fa5dccb8687fd2226e5c12347cebd0e8bf5ec59bf67a630c46c",
+      "hash": "769416eb90c80af4c877668367fba3203f03932c2013e8ac0778a983916abb9f",
       "route": "/it/utilita/categorie/giochi/pianificatore-tempo-frame-fps-hz-giochi/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/giochi/test-velocita-scrittura/": {
-      "hash": "27264684bd2a85c95ffdafc920567859b0a953d5b64cd07b1b668db65cd1739d",
+      "hash": "66f4825f71472c5e60a838690897a7592c2065a1042e5c3c9503aac01af5f4e1",
       "route": "/it/utilita/categorie/giochi/test-velocita-scrittura/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/games/game-fps-hz-frame-time-planner/": {
-      "hash": "7eac249aeb623dadb3348cdb58760e8553b5c2786a06225a4624d404e390ae9b",
+      "hash": "9049cc34e376096f7616136aa221e5bb1be68700549b72ee5c7b130236b4872f",
       "route": "/ja/utilities/categories/games/game-fps-hz-frame-time-planner/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/games/": {
-      "hash": "89deba1db42211e494b9cf0238bf810f381567c6214e1bd27a3f752cec86dec8",
+      "hash": "17feeab6021db03d3eaff638ee64c521dd1edd484f67b028cfd97c1e4eb68fa2",
       "route": "/ja/utilities/categories/games/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/games/mouse-sensitivity-converter-between-games/": {
-      "hash": "0730679f7f2ba38df99850a9b1c73bafca4127f278233057ceda9ed40349af5f",
+      "hash": "9b9bad17d8fd9810cacc30d37abb3377ca455d72f5ef4bc7264dda58f6cbf8e0",
       "route": "/ja/utilities/categories/games/mouse-sensitivity-converter-between-games/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/games/typing-speed-test/": {
-      "hash": "310b4346db92c060377ef2012c35f03bf51ebcb8153b383dfdda1a414dd415fb",
+      "hash": "3446ff7bc4aafdae99f42c2b6936eb0b37e4bbd9e7b2a7594296b06058803547",
       "route": "/ja/utilities/categories/games/typing-speed-test/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/games/game-fps-hz-frame-time-planner/": {
-      "hash": "0c6aba93361cd7a192200cc6f758bccbcd74eb819ae336646056158d45304552",
+      "hash": "b3badaa723222d6763a8f4d06bc441a876a55735357242d7e9a1dde022eb5ac2",
       "route": "/ko/utilities/categories/games/game-fps-hz-frame-time-planner/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/games/": {
-      "hash": "bf57c3ee89e047741cd56ff562f11d643974ad95ac970cdeadd3e56e6b0e66aa",
+      "hash": "47836f397d3a2df97ed5fec13fb93422a289199777435c3d47d3d99df4ed88d7",
       "route": "/ko/utilities/categories/games/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/games/mouse-sensitivity-converter-between-games/": {
-      "hash": "ba8e110ea26bc0b52c038f4d632a48a1ff96049f47685b24367aa54904ed2a08",
+      "hash": "d714f65be3f53d5ab21a87fd15b2c5e347627c11f5ada5cd410e81c88aba4097",
       "route": "/ko/utilities/categories/games/mouse-sensitivity-converter-between-games/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/games/typing-speed-test/": {
-      "hash": "06b12ff482b4977d490e0c689c6e5c11982e0b905785cd723f747077d925cf4d",
+      "hash": "fa340db23a19d75a2242066a856bdbc72cff1124a4abc0f02715c53cc252dc08",
       "route": "/ko/utilities/categories/games/typing-speed-test/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/games/game-fps-hz-frametijd-planner/": {
-      "hash": "03647f71a12f3dca735583306c99e4b3495564643b9302eff34f0b0e8e3a93b2",
+      "hash": "5ceb50955bf9bf345ddaa060ead4e7163a707f32e2ea54d7cf4ea441b4834c77",
       "route": "/nl/hulpmiddelen/categorieen/games/game-fps-hz-frametijd-planner/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/games/": {
-      "hash": "97b8a79ec7574d6c95f2c10d05154163f59b40658cf7ef85e68a9fe259edfc6f",
+      "hash": "705e25f0fc2807e7684d88bad010395a9b4a306417055e6a663241852ce1b9a1",
       "route": "/nl/hulpmiddelen/categorieen/games/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/games/muis-gevoeligheid-omrekenen-games/": {
-      "hash": "594ca4c36692f773427a2c2532c4ff615247ff5133700631decce1f01d973e5f",
+      "hash": "d10205870b1df70cb71aa948ca92cebea13dc961a4385d087d53b95c2b258ce2",
       "route": "/nl/hulpmiddelen/categorieen/games/muis-gevoeligheid-omrekenen-games/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/games/typsnelheid-test/": {
-      "hash": "883a5deeb70c1b1786a96ab966a906d58abfbe4be556beefbd3e5db55614e4f6",
+      "hash": "fd31f173d62b669fc9553b5ca1f187497f4080eea8d1007ed21c7b673ae10a9c",
       "route": "/nl/hulpmiddelen/categorieen/games/typsnelheid-test/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/gry/": {
-      "hash": "38a22c149d8c6b3f10c9b7982f5e85b270f606d627e2892d310470ceeb9b4394",
+      "hash": "75269979febb5e9a20d2f258ce8a14689be8ff58368314b16e54c35e61864b70",
       "route": "/pl/narzedzia/kategorie/gry/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/gry/planer-czasu-klatki-fps-hz-gier/": {
-      "hash": "91dc789b42fe0fa239a88268c85798eaa0b6a37b6641c0ec52413567a41c29ae",
+      "hash": "39bd18536e0d6bf2ee566a3f9354b766ec7c15bee171cc03c4a2a83c49a26644",
       "route": "/pl/narzedzia/kategorie/gry/planer-czasu-klatki-fps-hz-gier/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/gry/przelicznik-czulosci-myszy-gry/": {
-      "hash": "f523efd432848f37d57024d3253324be3e9b8ae7f5c25ef9907fe05f7b47c6c8",
+      "hash": "69fbf83b6a7a8d1d5814d556ea716076831bcbeab9653801547d475fa00aba67",
       "route": "/pl/narzedzia/kategorie/gry/przelicznik-czulosci-myszy-gry/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/gry/test-predkosci-pisania/": {
-      "hash": "84ffe13cf7f0b9e3646be56b3afa7f601b3f35af1327dbe89f0ee936786b8d45",
+      "hash": "cfaf2723d308ae59486dabff8ba121412c62b19dde25b74f00cff39f4b1de952",
       "route": "/pl/narzedzia/kategorie/gry/test-predkosci-pisania/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/jogos/conversor-sensibilidade-mouse-jogos/": {
-      "hash": "77183201dd3253ddd3b354065882722dd3039410327220cc86898eb0c58736e2",
+      "hash": "c63c46f01b1058cb5b268ff15f5f1d4169cd43a8843724b75cd3c8edf804e209",
       "route": "/pt/utilidades/categorias/jogos/conversor-sensibilidade-mouse-jogos/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/jogos/": {
-      "hash": "5ceab43decdfd96f898a8bdb76b1c736ab45bdd6557251108de850c3d2fa98af",
+      "hash": "d2a32c1ea88ff32c0ec462f8c25fc60c82c394f61ffa2b9e8712293d7ac429c8",
       "route": "/pt/utilidades/categorias/jogos/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/jogos/planejador-tempo-quadro-fps-hz-jogos/": {
-      "hash": "840f44249c25ab29d27a755b9cb2b45f69d198b7c2b798492bc434398e46f6ef",
+      "hash": "df4ca4f88ad714ace0b728ea15f99ae5fe3dfb1701fb42e30dc65fedb46dd26a",
       "route": "/pt/utilidades/categorias/jogos/planejador-tempo-quadro-fps-hz-jogos/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/jogos/teste-velocidade-digitacao/": {
-      "hash": "f5ae75f35dc290bdce4d32e85045b0d7b29c8bf7b778c14dfbc9de700f8258fd",
+      "hash": "a48d0d0b660fa5382528ee9bb40bffd675d835a1be190e23e90d49df49b85d5c",
       "route": "/pt/utilidades/categorias/jogos/teste-velocidade-digitacao/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/igry/": {
-      "hash": "1a197dc3e460792dd50c3a79c58bb51ba058d58c80bd9cbd9b0428df63593505",
+      "hash": "3787645d3dc71e77ed89a1d7c50795f24f9fe0341cbf46e8e89225a159092b1b",
       "route": "/ru/instrumenty/kategorii/igry/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/igry/konverter-chuvstvitelnosti-myshi-igr/": {
-      "hash": "67993e8d3e7cc6ae06419d7a1358c40c6ec123f166d16eccf32fd0596a2bfe8c",
+      "hash": "d306b1241198fcd2417de5fd9e773266b191320e9045c142d2bac3e01606f960",
       "route": "/ru/instrumenty/kategorii/igry/konverter-chuvstvitelnosti-myshi-igr/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/igry/planirovshchik-vremeni-kadra-fps-hz-igr/": {
-      "hash": "9bdb83dfbf07796ca2fa897ea65d7dcc2da441d6ef789935db3fb6ca31946bcd",
+      "hash": "b5233d5912568bce0c9f12735783635f4f40626f2be91c30d3786832a9343cd9",
       "route": "/ru/instrumenty/kategorii/igry/planirovshchik-vremeni-kadra-fps-hz-igr/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/igry/test-skorosti-pechati/": {
-      "hash": "43118ad10a041502f2f0306996e34901add5bc7253f82c655c46da65a9330ed5",
+      "hash": "7e654b85923c38af08234ad02feec2292d2485b68b91cea38ed8d989d7d2b281",
       "route": "/ru/instrumenty/kategorii/igry/test-skorosti-pechati/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/spel/": {
-      "hash": "e3dbb55ae0f23d61feb3b1f3d4927fc5b22f24c7727d69f99dd26aeaf1969012",
+      "hash": "a6fecd58f64e4a20252d3915451145c7381f3da4b0efed94e0c1a6732ccc72bf",
       "route": "/sv/verktyg/kategorier/spel/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/spel/mousensitivitet-omvandlare-spel/": {
-      "hash": "07462560afeb46fd8695ef98560c3f13b7083e1a6f3b2816776e24cc7b6a3c0e",
+      "hash": "6ffcbd1839f1222b32dcaaf919e19bce5db67e1bedcda4459295ff6a7dbb4201",
       "route": "/sv/verktyg/kategorier/spel/mousensitivitet-omvandlare-spel/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/spel/planerare-bildtid-fps-hz-spel/": {
-      "hash": "dcd5e786a1275581d75a42ad3817022292d0c1d4759a56b856c7d672771cb878",
+      "hash": "ace7a63ae8cd2c0e8e756315ccf885db62241ac97257f9a7b4ef57c6d9e93eee",
       "route": "/sv/verktyg/kategorier/spel/planerare-bildtid-fps-hz-spel/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/spel/typtest-svensk/": {
-      "hash": "33a217e9bec0952e092841906fb429a48e84307c4f4094c6e1751f3d6cc60b08",
+      "hash": "a31cf7b499857ca7268f2695dd8fb73fd0152137355ae385133e747152ea38f4",
       "route": "/sv/verktyg/kategorier/spel/typtest-svensk/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/oyunlar/fare-hassasiyeti-donusturucu-oyunlar/": {
-      "hash": "df58a4ac9174ec0b5eed280349176d174cdd8dabda551a43e61394b407a3d8d9",
+      "hash": "452964d70bf798904a319bda9825e50acd3a7699767a7049401cc890f78412ce",
       "route": "/tr/araclar/kategoriler/oyunlar/fare-hassasiyeti-donusturucu-oyunlar/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/oyunlar/": {
-      "hash": "f5e4a3327651620032d03d99725fdec8a35824596c8b00b3910d925bf0ecdbb1",
+      "hash": "4e3f638b80813fd882816f0f53f53e88b5c45555d547a4d0f72ef9d6810eac10",
       "route": "/tr/araclar/kategoriler/oyunlar/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/oyunlar/oyun-fps-hz-kare-suresi-planlayici/": {
-      "hash": "71ee4e8b108a48cf44ff9f6ade2e346b854a7ba20c3860b2dc74778682acc0e0",
+      "hash": "1b49c2c1c39fd85b66da8f0a13d1e64ba6664a6e732c0e418f1cc056d4b04df8",
       "route": "/tr/araclar/kategoriler/oyunlar/oyun-fps-hz-kare-suresi-planlayici/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/oyunlar/yazim-hizi-testi/": {
-      "hash": "0909cd6d358361bb77b3ce4dd6f8502cda9fff2d66ea0502d28f1fbd674edbe4",
+      "hash": "095f0160c0abcae3fb758b1c3b01a7dfd4556367343079c1df84245994e7e83f",
       "route": "/tr/araclar/kategoriler/oyunlar/yazim-hizi-testi/"
     },
     "https://www.jjlmoya.es/utilidades/categorias/retos-y-juegos/": {
-      "hash": "33d104538d419bee2fefd6aac50a30fe9c34fa1ea2b9094a22efa042662f8f20",
+      "hash": "a0108d4dc5a9ada51b03836d5313d386eaf039f2dab9408ea37ec839e7e9d4a3",
       "route": "/utilidades/categorias/retos-y-juegos/"
     },
     "https://www.jjlmoya.es/utilidades/conversor-sensibilidad-raton-juegos/": {
-      "hash": "e49eaf19e50ce8fc8224666173939d051c045daaa65b4c5f374b20a54b773b87",
+      "hash": "949838c638fb5daf51baec4abbbe93bd49c1953da177f07e768a15a2127e8414",
       "route": "/utilidades/conversor-sensibilidad-raton-juegos/"
     },
     "https://www.jjlmoya.es/utilidades/planificador-fps-hz-tiempo-cuadro-juegos/": {
-      "hash": "a5d4c347a09441f230da1d07df0e79123d47cbe12755ee9da4c29c6aed418d18",
+      "hash": "086b6535c54235bbdbed3e7ed183d4371165aec471c22bb5aaf0abf646c9f737",
       "route": "/utilidades/planificador-fps-hz-tiempo-cuadro-juegos/"
     },
     "https://www.jjlmoya.es/utilidades/test-mecanografia/": {
-      "hash": "f3bae186b81cb6258aa82398f3998929000ed64c1a16716f10ba5e441d040aba",
+      "hash": "d52d43ff0a6c7d40a7628d06a7384a080bfcb6e713824717ab734c1ec63634ca",
       "route": "/utilidades/test-mecanografia/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/games/game-fps-hz-frame-time-planner/": {
-      "hash": "f92324ba81b8b52cf789380e7577e8962b954f927f4f76f21a398a8aad8a2baa",
+      "hash": "285d787612668142aa2eaba4f161c5ba01f55756b2938324d22039233dc9903f",
       "route": "/zh/utilities/categories/games/game-fps-hz-frame-time-planner/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/games/": {
-      "hash": "7f1be894e2b0ec9853767593f3e925ab26931586f0b1f34e2db0001a7827db89",
+      "hash": "7782e313cf196bfe19c851e542c438317d6dce86855f9c4de07d6fe1e1b585e7",
       "route": "/zh/utilities/categories/games/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/games/mouse-sensitivity-converter-between-games/": {
-      "hash": "dea21bef93e7a5bb1b8128ec03d0d48185478cb399929518d41526b012cf8718",
+      "hash": "6b420b900b8b600839ec98ebbbc0feb058a33395d7bd7720fa9fef0a589b6b12",
       "route": "/zh/utilities/categories/games/mouse-sensitivity-converter-between-games/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/games/typing-speed-test/": {
-      "hash": "ddd003898f26405668eeeaf91693796933c5ae88c3dea358182e93b772d83c99",
+      "hash": "1e53c1e707053ff68c8866e0a77d1b6aa4d68af0d1549d3fd1cc47ad49bc6fee",
       "route": "/zh/utilities/categories/games/typing-speed-test/"
     }
   }
